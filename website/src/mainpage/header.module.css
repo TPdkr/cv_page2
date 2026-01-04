@@ -1,0 +1,63 @@
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.star{
+    max-width: 6rem;
+}
+
+.suptitle{
+    color: var(--secondary);
+    font-weight: lighter;
+}
+
+.bottom{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.me{
+    background-color: var(--onBackground);
+    object-fit: cover;
+    max-width: 30rem;
+    aspect-ratio: 1;
+}
+
+.myName{
+    align-self: flex-end;
+    gap: 2rem;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.myName img{
+    max-width: 4rem;
+}
+
+@media (max-width: 37rem){
+    .star{
+        display: none;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+
+    .myName{
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .starName{
+        position: absolute;
+        top: 0;
+        right:0;
+        z-index: 3;
+    }
+}
