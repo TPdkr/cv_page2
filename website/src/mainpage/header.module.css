@@ -40,6 +40,22 @@
     max-width: 4rem;
 }
 
+
+
+.starName{
+    animation: pulse 3s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse{
+    from {
+        scale: 1;
+    }
+    to{
+        scale: 1.5;
+    }
+}
+
 @media (max-width: 37rem){
     .star{
         display: none;

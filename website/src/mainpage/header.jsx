@@ -15,9 +15,9 @@ function Header(){
                 <img src={star} className={styles.star}/>
             </div>
 
-            <h4 className={styles.suptitle}>
+            <p className={styles.suptitle}>
                 This website shows my achievements, expereinces and projects. Feel free to explore, click on things and reach out through my contacts here.
-            </h4>
+            </p>
 
             <div className={styles.bottom}>
                 <img src={mePic} className={styles.me}></img>
