@@ -1,7 +1,7 @@
 .title{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: var(--medium);
 }
 
 .title h1{
@@ -19,7 +19,7 @@
 }
 
 .bottom{
-    margin-top: 5rem;
+    margin-top: var(--big);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 
 .myName{
     align-self: flex-end;
-    gap: 2rem;
+    gap: var(--medium);
     max-width: 30rem;
     display: flex;
     flex-direction: row;
@@ -73,7 +73,7 @@
     }
 
     .myName{
-        margin-top: 1rem;
+        margin-top: var(--small);
         align-self: flex-start;
         flex-direction: row-reverse;
         align-items: center;

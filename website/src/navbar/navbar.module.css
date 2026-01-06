@@ -8,11 +8,11 @@
 
     border-bottom: 2px solid var(--onBackground);
     background-color: var(--background);
-    padding: 0.5rem;
+    padding: var(--tiny);
 }
 
 .Links{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: var(--small);
 }

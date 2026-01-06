@@ -6,8 +6,7 @@
 
 .overlay{
     height: 100vh;
-    padding: 2rem;
-    padding-top: 50px;
+    padding: var(--medium);
     background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -17,5 +16,5 @@
 
 .overlay h3{
     color: var(--secondary);
-    margin-bottom: 3rem;
+    margin-bottom: var(--big);
 }

@@ -1,12 +1,12 @@
 .cell{
-    padding: 1rem;
+    padding: var(--small);
     background-color: var(--background);
     color: var(--onBackground);
     border: 3px solid var(--onBackground);
 }
 
 .filledCell{
-    padding: 1rem;
+    padding: var(--small);
     background-color: var(--onBackground);
     color: var(--background);
     border: 3px solid var(--onBackground);

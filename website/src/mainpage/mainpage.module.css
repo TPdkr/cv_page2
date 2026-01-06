@@ -2,6 +2,6 @@
     max-width: 90rem;
     margin: 0 auto;
     padding: 5rem 2rem;
-    gap: 6rem;
+    gap: var(--giant);
     display: grid;
 }

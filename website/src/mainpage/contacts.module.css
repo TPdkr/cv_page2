@@ -1,12 +1,12 @@
 .content{
     display: grid;
-    gap: 2rem;
+    gap: var(--medium);
 }
 
 .buttonRow{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: var(--medium);
 }
 
 @media (max-width: 37rem){
