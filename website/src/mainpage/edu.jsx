@@ -31,7 +31,7 @@ function Edu(){
             </div>
             {/** SESC SECTION*/}
             <div className={styles.sesc}>
-                <h2>SCIENTIFIC AND EDUCATIONAL CENTER</h2>
+                <h2>SPECIALIZED SCIENTIFIC AND EDUCATIONAL CENTER</h2>
                 <div className={styles.suptitle}>
                     <h3>
                         High schol diploma
@@ -41,7 +41,7 @@ function Edu(){
                     </h3>
                 </div>
                 <div className={styles.sescGrid}>
-                    <img src={school}></img>
+                    <img src={school} className={styles.schoolPic}></img>
                     <div>
                         <h4>---2020-2023</h4>
                         <p>
