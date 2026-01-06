@@ -1,5 +1,8 @@
 import styles from "./edu.module.css";
 import uni from "../assets/uni.png";
+import school from "../assets/school.png";
+import { Cell, FilledCell } from "../atomics/grid";
+
 function Edu(){
     return (
         <>
@@ -36,6 +39,25 @@ function Edu(){
                     <h3>
                         Ekaterinburg, Russia
                     </h3>
+                </div>
+                <div className={styles.sescGrid}>
+                    <img src={school}></img>
+                    <div>
+                        <h4>---2020-2023</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique.
+                        </p>
+
+                        <div className={styles.schoolGpa}>
+                            <Cell><p className={styles.onBack}>
+                                1.00(perfect) GPA
+                            </p></Cell>
+
+                            <FilledCell><p className={styles.onPr}>
+                                Gold medal for acedemic achievements
+                            </p></FilledCell>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

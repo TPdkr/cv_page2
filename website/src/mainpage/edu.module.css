@@ -2,12 +2,54 @@
     color: var(--secondary);
     display: flex;
     flex-direction: row;
-    justify-items: space-between;
+    justify-content: space-between;
 }
+
+.suptitle h3{
+    font-weight: 400;
+}
+
+@media (max-width: 37rem){
+    .suptitle{
+        flex-direction: column;
+    }
+}
+
+/*UNI*/
 
 .uniPic{
     width: 100%;
+    max-width: 100%;
     max-height: 30rem;
     object-fit: cover;
     margin: var(--medium) 0;
+}
+
+/*SESC*/
+
+.sescGrid{
+    margin-top: var(--medium);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--medium);
+}
+
+.schoolGpa{
+    margin-top: var(--big);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 37rem){
+    .sescGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.onBack{
+    color: var(--onBackground);
+}
+
+.onPr{
+    color: var(--background);
 }
