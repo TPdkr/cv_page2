@@ -1,3 +1,8 @@
+.education{
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
 .suptitle{
     color: var(--secondary);
     display: flex;

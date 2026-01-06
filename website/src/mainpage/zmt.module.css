@@ -1,3 +1,8 @@
+.experience{
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
 .zmt{
     display: grid;
     grid-template-columns: 1fr 1fr;
