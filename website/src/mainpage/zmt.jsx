@@ -1,5 +1,6 @@
 import styles from "./zmt.module.css";
 import wave from "../assets/wave.png";
+import Separator from "../atomics/separator";
 
 function Zmt(){
     return (
@@ -34,6 +35,7 @@ function Zmt(){
                     At leibnitz insititute for marine research
                 </h4>
             </div>
+            <Separator simb="-"></Separator>
         </>
     );
 }
