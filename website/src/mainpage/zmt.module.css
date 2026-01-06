@@ -1,0 +1,42 @@
+.zmt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wave{
+    max-width: 100%;
+}
+
+@media(max-width: 64rem){
+    .zmt{
+        grid-template-columns: 1fr;
+    }
+
+    .wave{
+        order: -1;
+        align-self: center;
+    }
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.content h3{
+    margin-top: var(--big);
+    color: var(--secondary);
+}
+
+.content h4{
+    margin-bottom: var(--medium);
+}
+
+.tasks{
+    margin-left: var(--medium);
+}
+
+.suptitle{
+    color: var(--secondary);
+}

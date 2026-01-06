@@ -93,6 +93,12 @@ p {
   font-weight: lighter;
 }
 
+.inv{
+    color: var(--background);
+    background-color: var(--onBackground);
+    width: fit-content;
+}
+
 @media (max-width: 37rem){
   h1{
     font-size: 4rem;
