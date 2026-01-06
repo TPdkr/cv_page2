@@ -27,6 +27,13 @@ GENERAL STYLING
   /*BACKGROUND*/
   color: var(--onBackground);
   background-color: var(--background);
+
+  /*PADDING AND GAP SIZES*/
+  --tiny: 0.5rem;
+  --small: 1rem;
+  --medium: 2rem;
+  --big: 4rem;
+  --giant: 8rem;
   
 
   font-synthesis: none;

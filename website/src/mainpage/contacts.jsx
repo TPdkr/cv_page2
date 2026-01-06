@@ -2,8 +2,11 @@ import Button from "../atomics/button";
 import {Cell, FilledCell} from "../atomics/grid";
 import Separator from "../atomics/separator";
 import styles from "./contacts.module.css";
+import { useNavigate } from 'react-router-dom';
 
 function Contacts(){
+    const navigate = useNavigate();
+
     return (
         <div className={styles.content}>
             <Separator simb="-"/>
@@ -16,7 +19,7 @@ function Contacts(){
                 </div>
                 {/** this is the projects/skills shortlist */}
                 <div className={styles.buttonRow}>
-                    <Button type="bright">Projects</Button>
+                    <Button type="bright" onClick={()=>{navigate("./projects/")}}>Projects</Button>
                     <p>
                         C/C++ | Kotlin | HTML | React |Python | CSS |PHP | Haskell |git |Linux  | GitHub | LateX
                     </p>

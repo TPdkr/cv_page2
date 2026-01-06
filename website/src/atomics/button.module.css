@@ -1,9 +1,11 @@
 .ButtonContainer{
+    cursor: pointer;
     overflow: hidden;
     min-width: max-content;
 }
 
 .Button{
+    cursor: pointer;
     font-size: 1.2rem;
     font-family: "JetBrains Mono", monospace, Helvetica;
     transition: all 0.5s linear;
