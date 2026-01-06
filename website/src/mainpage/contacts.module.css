@@ -1,10 +1,52 @@
 .content{
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .buttonRow{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+}
+
+@media (max-width: 37rem){
+    .buttonRow{
+        flex-direction: column;
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 62.5rem){
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .o1{
+        order: 2
+    }
+
+    .o2{
+        order: 4;
+    }
+
+    .o3{
+        order: 1;
+    }
+
+    .o4{
+        order: 3;
+    }
+
+    .o5{
+        order: 5;
+    }
+}
+
+@media (max-width: 37rem){
+    .grid{
+        grid-template-columns: 1fr;
+    }
 }

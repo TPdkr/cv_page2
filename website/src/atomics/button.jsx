@@ -6,7 +6,12 @@ import styles from "./button.module.css";
  * @param {*} children - content of the button
  * @returns 
  */
-function Button({children, type="primary", onClick=()=>{console.log("I was clicked heehehe");}}){
+function Button({
+    children,
+    type="primary", 
+    onClick=()=>{console.log("I was clicked heehehe");},
+    padding = "1rem 2rem"
+    }){
     /*
     PRIMARY BUTTON
     */
@@ -17,7 +22,8 @@ function Button({children, type="primary", onClick=()=>{console.log("I was click
 
     const ButtonStPr={
         backgroundColor: "var(--background)",
-        color: "var(--onBackground)"
+        color: "var(--onBackground)",
+        padding: padding
     };
 
     /*
@@ -30,7 +36,8 @@ function Button({children, type="primary", onClick=()=>{console.log("I was click
 
     const ButtonStBr={
         backgroundColor: "var(--onBackground)",
-        color: "var(--background)"
+        color: "var(--background)",
+        padding: padding
     };
 
     /*
@@ -46,6 +53,7 @@ function Button({children, type="primary", onClick=()=>{console.log("I was click
         ButtonSt = ButtonStBr;
     }
 
+    /** now the final jsx is returned with appropriate styling */
     return (
         <div className={styles.ButtonContainer} style={contSt} onClick={onClick}>
             <button className={styles.Button} style={ButtonSt}>
