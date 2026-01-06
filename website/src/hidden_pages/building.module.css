@@ -11,6 +11,10 @@
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.overlay h1{
+    word-break: break-word;
+}
+
 .overlay h3{
     color: var(--secondary);
     margin-bottom: 3rem;
