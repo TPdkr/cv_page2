@@ -81,6 +81,8 @@ h5{
 
 p {
   font-size: 1.2rem;
+  color: var(--secondary);
+  font-weight: lighter;
 }
 
 @media (max-width: 37rem){

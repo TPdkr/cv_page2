@@ -1,0 +1,10 @@
+.content{
+    display: grid;
+    gap: 1rem;
+}
+
+.buttonRow{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
