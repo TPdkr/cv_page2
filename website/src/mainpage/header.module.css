@@ -4,6 +4,11 @@
     gap: 2rem;
 }
 
+.title h1{
+    overflow-wrap: break-word;
+    word-break: break-word;   
+}
+
 .star{
     max-width: 6rem;
 }
@@ -25,6 +30,7 @@
     object-fit: cover;
     max-width: 30rem;
     aspect-ratio: 1;
+    min-width: none;
 }
 
 .myName{
@@ -71,5 +77,10 @@
         align-self: flex-start;
         flex-direction: row-reverse;
         align-items: center;
+        justify-items: space-between;
+    }
+
+    .me{
+        display: none;
     }
 }

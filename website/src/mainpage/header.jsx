@@ -11,7 +11,7 @@ function Header(){
     return (
         <div>
             <div className={styles.title}>
-                <h1>Portfolio website</h1>
+                <h1>CV website</h1>
                 <img src={star} className={styles.star}/>
             </div>
 
