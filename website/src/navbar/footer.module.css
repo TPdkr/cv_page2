@@ -1,0 +1,30 @@
+.footer{
+    padding: var(--medium);
+    margin-bottom: var(--medium);
+}
+
+.content{
+    margin: var(--small) 0;
+}
+
+.cont{
+    margin-bottom: var(--big);
+    position: relative;
+}
+
+.link{
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.bop{
+    position: absolute;
+    top: 0;
+    right:0;
+    max-width: 5rem;
+}
+
