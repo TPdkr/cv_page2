@@ -3,13 +3,14 @@ import styles from "./volunteering.module.css";
 
 function Volunteering(){
     return (<>
-    <Separator simb="*"/>
     <div className={styles.header}>
+        <Separator simb="*"/>
         <h2>
             VOLUNTEERING
         </h2>
+        <Separator simb="*"/>
     </div>
-    <Separator simb="*"/>
+    
     {/** CROCHET CLUB */}
     <div>
         <p className="inv">CROCHET CLUB</p>
