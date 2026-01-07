@@ -30,6 +30,27 @@
     margin: var(--medium) 0;
 }
 
+.uniGrades{
+    margin-top: var(--medium);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 64rem){
+    .uniGrades{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 37rem){
+    .uniGradesTitle{
+        order: -1;
+    }
+
+    .uniGrades{
+        grid-template-columns: 1fr;
+    }
+}
+
 /*SESC*/
 
 .sescGrid{
@@ -44,7 +65,6 @@
 }
 .schoolGpa{
     margin-top: var(--big);
-    display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -54,10 +74,10 @@
     }
 }
 
-.onBack{
+/*.onBack{
     color: var(--onBackground);
 }
 
 .onPr{
     color: var(--background);
-}
+}*/

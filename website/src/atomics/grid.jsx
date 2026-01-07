@@ -1,5 +1,13 @@
 import styles from "./grid.module.css";
 
+export function Grid({children, className=""}){
+    return (
+        <div className={`${styles.grid} ${className}`}>
+            {children}
+        </div>
+    );
+}
+
 export function Cell({children, className=""}){
     return (
         <div className={`${styles.cell} ${className}`}>

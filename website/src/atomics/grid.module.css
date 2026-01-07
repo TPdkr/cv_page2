@@ -1,3 +1,7 @@
+.grid{
+    display: grid;
+}
+
 .cell{
     padding: var(--small);
     background-color: var(--background);
@@ -10,4 +14,9 @@
     background-color: var(--onBackground);
     color: var(--background);
     border: 3px solid var(--onBackground);
+}
+
+.filledCell p, .filledCell p b{
+    background-color: var(--onBackground);
+    color: var(--background)
 }

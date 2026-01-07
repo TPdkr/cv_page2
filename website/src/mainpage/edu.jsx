@@ -1,7 +1,7 @@
 import styles from "./edu.module.css";
 import uni from "../assets/uni.png";
 import school from "../assets/school.png";
-import { Cell, FilledCell } from "../atomics/grid";
+import { Cell, FilledCell, Grid } from "../atomics/grid";
 
 function Edu(){
     return (
@@ -21,6 +21,7 @@ function Edu(){
                     </h3>
                 </div>
                 <img src={uni} className={styles.uniPic}/>
+                {/** text contents */}
                 <h4>---2023-PRESENT</h4>
                 <p>
                     During my studies here I advanced my technical and non technical skills. I actively participated in campus live and in classes.
@@ -30,6 +31,19 @@ function Edu(){
                     I volunteered as a peer mentor for 2 years as well as lead student clubs on campus, which made me better at clear communication,
                     scheduling my time and managing responsibilities.
                 </p>
+                {/** grid with the grades */}
+                <Grid className={styles.uniGrades}>
+                    <Cell><p><b>(90%, 1.33)</b> Software engineering</p></Cell>
+                    <FilledCell className={styles.uniGradesTitle}><p>
+                        Course work; 
+                        GPA:
+                        Credits: 175
+                    </p></FilledCell>
+                    <Cell><p><b>(100%, 1.00)</b> Operating systems</p></Cell>
+                    <Cell><p><b>(97%, 1.00)</b> Databases and web services</p></Cell>
+                    <Cell><p><b>(100%, 1.00)</b> Algorithms and data structures</p></Cell>
+                    <Cell><p><b>(96%, 1.00)</b> Programming in C/C++</p></Cell>
+                </Grid>
             </div>
             {/** SESC SECTION*/}
             <div className={styles.sesc}>
@@ -52,7 +66,7 @@ function Edu(){
                             Here I started learning such languages such as C++ and python, which helped me while starting my Bachelor's.
                         </p>
 
-                        <div className={styles.schoolGpa}>
+                        <Grid className={styles.schoolGpa}>
                             <Cell><p className={styles.onBack}>
                                 1.00(perfect) GPA
                             </p></Cell>
@@ -60,7 +74,7 @@ function Edu(){
                             <FilledCell><p className={styles.onPr}>
                                 Gold medal for acedemic achievements
                             </p></FilledCell>
-                        </div>
+                        </Grid>
                     </div>
                 </div>
             </div>
