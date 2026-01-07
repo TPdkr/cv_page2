@@ -1,18 +1,39 @@
+import { useState } from "react";
 import Button from "../atomics/button";
 import {Cell, FilledCell} from "../atomics/grid";
 import Separator from "../atomics/separator";
 import styles from "./contacts.module.css";
 import { useNavigate } from 'react-router-dom';
+import cross from "../assets/cross.svg";
 
 function Contacts(){
     const navigate = useNavigate();
+
+    const popUpState = usePopUp();
+    const open = popUpState.open;
+    const close = popUpState.close;
+    const isOpen = popUpState.isOpen;
+
+    const toGit = ()=> {
+        window.location.href="https://github.com/TPdkr";
+    };
+
+    const toEmail = ()=>{
+        window.location.href="mailto:tpdkrt@gmail.com";
+    };
+
+    const toPhone = ()=>{
+        window.location.href="tel:4915256406909";
+    };
+
+    
 
     return (
         <div className={styles.content}>
             <Separator simb="-"/>
                 {/** this is the contacts info section */}
                 <div className={styles.buttonRow}>
-                    <Button>Contacts</Button>
+                    <Button onClick={open}>Contacts</Button>
                     <p>
                         Find my phone, emial, GitHub and LinkdIn. Best way to reach out to me is via email. I respond withing 1-3 working days.
                     </p>
@@ -34,8 +55,50 @@ function Contacts(){
                     <Cell className={styles.o5}><h4>B1 Intermediate</h4></Cell>
                 </div>
             <Separator simb="-"/>
+            <PopUp close={close} isOpen={isOpen}>
+                <h2  className={styles.popUpTitle}>
+                    My contacts
+                </h2>
+                <p className={styles.popUpDesc}>
+                    Find my phone, emial, GitHub and LinkdIn. Best way to reach out to me is via email. I respond withing 1-3 working days.
+                </p>
+                <div className={styles.popUpLinks}>
+                    <Button type="bright" onClick={toGit}>
+                        GitHub
+                    </Button>
+                    <Button type="bright" onClick={toEmail}>
+                        Email
+                    </Button>
+                    <Button type="bright" onClick={toPhone}>
+                        Phone
+                    </Button>
+                    <Button type="bright">
+                        CV
+                    </Button>
+                    <Button type="bright">
+                        LinkdIn
+                    </Button>
+                </div>
+            </PopUp>
         </div>
     );
 }
 
 export default Contacts
+
+function usePopUp() {
+    const [isOpen, setOpen] = useState(false);
+    const close = () => setOpen(false);
+    const open = () => setOpen(true);
+    
+    return { isOpen, close, open };
+}
+
+function PopUp({isOpen, close, children}){
+    return (<div className={`${styles.popUpBack} ${(isOpen)? styles.open : styles.closed} `} onClick={close}>
+        <div className={styles.popUpWindow}>
+            <img src={cross} className={styles.closePopUp}/>
+            {children}
+        </div>
+    </div>);
+}
