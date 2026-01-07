@@ -68,6 +68,8 @@ FONT SIZES
 
 h1 {
   font-size: 8rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 h2 {
@@ -97,6 +99,10 @@ p {
     color: var(--background);
     background-color: var(--onBackground);
     width: fit-content;
+}
+
+.indent{
+  margin-left: var(--medium);
 }
 
 @media (max-width: 37rem){

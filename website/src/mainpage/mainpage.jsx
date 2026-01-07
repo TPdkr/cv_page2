@@ -3,6 +3,7 @@ import Header from "./header.jsx";
 import Contacts from "./contacts.jsx";
 import Zmt from "./zmt.jsx";
 import Edu from "./edu.jsx";
+import Volunteering from "./volunteering.jsx";
 
 function MainPage(){
     return (
@@ -11,6 +12,7 @@ function MainPage(){
         <Contacts/>
         <Zmt/>
         <Edu/>
+        <Volunteering/>
     </div>
     );
 }
