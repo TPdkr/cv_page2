@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import bop from "../assets/star_dark.svg";
+import bop from "../assets/atom_dark.svg";
 import Separator from "../atomics/separator";
 
 function Footer(){
