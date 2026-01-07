@@ -23,10 +23,12 @@ function Edu(){
                 <img src={uni} className={styles.uniPic}/>
                 <h4>---2023-PRESENT</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique possit, augeri.
-                    <br></br>
-                    <br></br>
-                    Modo efficiatur concludaturque ratio tradit, non qua via captiosa solvantur ambigua distinguantur ostendit; iudicia rerum in sensibus ponit, quibus si semel aliquid falsi pro vero probatum sit, sublatum esse omne iudicium veri et falsi putat. Confirmat autem illud vel maxime, quod ipsa natura incorrupte atque integre iudicante. Itaque.
+                    During my studies here I advanced my technical and non technical skills. I actively participated in campus live and in classes.
+                    <br></br><br></br>
+                    I learned essential knowledge in the field of computer science and completed many group projects during my studies.
+                    <br></br><br></br>
+                    I volunteered as a peer mentor for 2 years as well as lead student clubs on campus, which made me better at clear communication,
+                    scheduling my time and managing responsibilities.
                 </p>
             </div>
             {/** SESC SECTION*/}
@@ -45,7 +47,9 @@ function Edu(){
                     <div>
                         <h4>---2020-2023</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut postea variari voluptas distinguique.
+                            I studied in a specialized class with strong focus on IT, Mathematics and Physics.<br></br><br></br>
+                            The diploma I received had all grades at 100%. The curriculum was challaning, but It laid the strong foundations for my degree.<br></br><br></br>
+                            Here I started learning such languages such as C++ and python, which helped me while starting my Bachelor's.
                         </p>
 
                         <div className={styles.schoolGpa}>
