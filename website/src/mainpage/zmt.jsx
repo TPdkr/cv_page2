@@ -5,7 +5,7 @@ import Separator from "../atomics/separator";
 function Zmt(){
     return (
         <>
-            <h1 className={`inv ${styles.experience}`} >
+            <h1 className={`inv ${styles.experience}`} id="exp">
                 EXPERIENCE
             </h1>
             <div className={styles.zmt}>

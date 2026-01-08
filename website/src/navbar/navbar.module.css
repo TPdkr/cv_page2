@@ -20,3 +20,52 @@
     flex-direction: row;
     gap: var(--small);
 }
+
+.hamburger, .cross{
+    max-width: 1.5rem;
+    display: none;
+}
+
+@media (max-width: 37rem){
+    /* button for opening and closing the navbar*/
+    .hamburger.closed{
+        display: inline;
+    }
+
+    .cross.open{
+        display: inline;
+    }
+
+    /* the new links section on mobile*/
+    .Links{
+        /*position on display*/
+        display: fixed;
+        position: fixed;
+        height: 100%;
+        left:0;
+        right:0;
+        z-index: -1;
+        /*content and style*/
+        background-color: var(--background);
+        flex-direction: column;
+        padding: var(--medium);
+        padding-top: var(--giant);
+        gap: var(--medium);
+        /*transition all for animations*/
+        transition: all 1s ease;
+        
+    }
+
+    .Links.open{
+        /*position*/
+        top: 0;
+        bottom: 0;
+        
+    }
+
+    .Links.closed{
+        /*position*/
+        top: -120vh;
+        bottom: 120vh
+    }
+}

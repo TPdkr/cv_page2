@@ -6,7 +6,7 @@ import { Cell, FilledCell, Grid } from "../atomics/grid";
 function Edu(){
     return (
         <>
-            <h1 className={`inv ${styles.education}`}>
+            <h1 className={`inv ${styles.education}`} id="edu">
                 EDUCATION
             </h1>
             {/** CONSTRUCTOR*/}
