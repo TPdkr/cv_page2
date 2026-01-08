@@ -18,6 +18,7 @@ MAIN USER FLOW CONTENT
 @media (max-width: 37rem){
     .buttonRow{
         flex-direction: column;
+        gap: var(--small);
     }
 }
 
