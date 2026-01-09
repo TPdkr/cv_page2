@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import styles from "./navbar.module.css";
-import hamburger from "../assets/menu.svg";
-import cross from "../assets/cross_dark.svg";
+import hamburger_d from "../assets/menu_dark.svg";
+import cross_d from "../assets/cross_dark.svg";
+import hamburger_l from "../assets/menu_light.svg";
+import cross_l from "../assets/cross_light.svg";
 import { useState } from "react";
 
 //theming
@@ -17,7 +19,9 @@ function Navbar(){
     const isOpenClass = (isOpen)? styles.open : styles.closed;
 
     //THEME SWITCHER
-    const {toggleTheme} = useTheme();
+    const {isLight,toggleTheme} = useTheme();
+    const cross = (isLight)? cross_l : cross_d;
+    const hamburger = (isLight)? hamburger_l : hamburger_d;
 
     return (
         <nav className={styles.Navbar}>

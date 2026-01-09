@@ -4,16 +4,21 @@ import {Cell, FilledCell} from "../atomics/grid";
 import Separator from "../atomics/separator";
 import styles from "./contacts.module.css";
 import { useNavigate } from 'react-router-dom';
-import cross from "../assets/cross.svg";
+import cross_l from "../assets/cross_light.svg";
+import cross_d from "../assets/cross_dark.svg";
+
+import { useTheme } from "../themer.jsx";
 
 function Contacts(){
     const navigate = useNavigate();
 
+    //POP UP MENU AND ITS STATE
     const popUpState = usePopUp();
     const open = popUpState.open;
     const close = popUpState.close;
     const isOpen = popUpState.isOpen;
 
+    //LINKS
     const toGit = ()=> {
         window.location.href="https://github.com/TPdkr";
     };
@@ -25,8 +30,6 @@ function Contacts(){
     const toPhone = ()=>{
         window.location.href="tel:4915256406909";
     };
-
-    
 
     return (
         <div className={styles.content}>
@@ -95,6 +98,10 @@ function usePopUp() {
 }
 
 function PopUp({isOpen, close, children}){
+     //THEME CONTEXT
+    const {isLight} = useTheme();
+    const cross = (isLight)? cross_d : cross_l;
+
     return (<div className={`${styles.popUpBack} ${(isOpen)? styles.open : styles.closed} `} onClick={close}>
         <div className={styles.popUpWindow}>
             <img src={cross} className={styles.closePopUp}/>
