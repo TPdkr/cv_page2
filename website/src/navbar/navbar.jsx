@@ -9,6 +9,8 @@ import { useState } from "react";
 
 //theming
 import { useTheme } from "../themer.jsx";
+import sun from "../assets/sun.svg";
+import moon from "../assets/moon.svg";
 
 function Navbar(){
     //NAVBAR STATE VALUES
@@ -23,6 +25,8 @@ function Navbar(){
     const cross = (isLight)? cross_l : cross_d;
     const hamburger = (isLight)? hamburger_l : hamburger_d;
 
+    const switchState = (isLight)? styles.light : styles.dark
+
     return (
         <nav className={styles.Navbar}>
             <img src={cross} className={`${styles.cross} ${isOpenClass}`} onClick={close}/>
@@ -34,7 +38,10 @@ function Navbar(){
                 <HashLink smooth to="cv_page2/#edu" onClick={close}>Education</HashLink>
             </div>
             <div className={styles.header}>
-                <p className={styles.switch} onClick={toggleTheme}>switch theme</p>
+                <div className={`${styles.themeSwitch} ${switchState}`} onClick={toggleTheme}>
+                    <img src={moon} className={`${styles.moon}  ${switchState}`}/>
+                    <img src={sun} className={`${styles.sun}  ${switchState}`}/>
+                </div>
                 <p>
                     cv_page2.html
                 </p>
