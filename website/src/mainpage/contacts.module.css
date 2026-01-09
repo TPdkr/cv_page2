@@ -106,6 +106,7 @@ POP UP
 
 .closePopUp{
     position: absolute;
+    cursor: pointer;
     top:var(--medium);
     right:var(--medium);
     max-width: 2rem;
