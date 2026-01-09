@@ -1,8 +1,16 @@
 import styles from "./footer.module.css";
-import bop from "../assets/atom_dark.svg";
+import bop_d from "../assets/atom_dark.svg";
+import bop_l from "../assets/atom_light.svg";
 import Separator from "../atomics/separator";
 
+import { useTheme } from "../themer.jsx";
+
 function Footer(){
+    //the theme context
+    const {isLight} = useTheme();
+    const bop = (isLight)? bop_l : bop_d;
+
+    //links to the thingies
     const toGit = ()=> {
         window.location.href="https://github.com/TPdkr";
     };

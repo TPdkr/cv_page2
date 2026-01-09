@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+  <ellipse style="fill: rgba(0, 0, 0, 0); transform-box: fill-box; transform-origin: 50% 50%; stroke-width: 30px; stroke: rgb(0, 0, 0);" cx="160.098" cy="244.557" rx="127.532" ry="287.059" transform="matrix(0.773219, -0.634139, 0.710551, 0.710551, 86.936486, 9.966575)"/>
+  <defs>
+    <bx:grid x="0" y="0" width="107.888" height="99.34"/>
+  </defs>
+  <ellipse style="fill: rgba(0, 0, 0, 0); stroke-width: 9; transform-origin: 160.098px 244.557px; stroke: rgb(0, 0, 0);" cx="160.098" cy="244.557" rx="127.532" ry="287.059" transform="matrix(-0.773219, -0.634139, -0.710551, 0.710551, 93.254568, 8.283091)"/>
+</svg>

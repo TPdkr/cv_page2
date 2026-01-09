@@ -1,13 +1,22 @@
 import styles from "./header.module.css";
-import star from "../assets/star_dark.svg";
-import star2 from "../assets/star_sharp_dark.svg";
+import star_d from "../assets/star_dark.svg";
+import star2_d from "../assets/star_sharp_dark.svg";
+import star_l from "../assets/star_light.svg";
+import star2_l from "../assets/star_sharp_light.svg";
 import mePic from "../assets/me.png";
+
+import {useTheme} from "../themer.jsx";
 
 /**
  * Header of the main page
  * @returns JSX
  */
 function Header(){
+    const {isLight} = useTheme();
+
+    const star = (isLight)? star_l : star_d;
+    const star2 = (isLight)? star2_l : star2_d;
+
     return (
         <div>
             <div className={styles.title}>
