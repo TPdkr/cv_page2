@@ -21,6 +21,8 @@ GENERAL STYLING
   --accent: #B45AF8;
   --onAccent: #000000;
 
+  --concealer: rgba(0, 0, 0, 0.9);
+
 
   color-scheme: light dark;
 
@@ -40,6 +42,26 @@ GENERAL STYLING
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.light{
+  /*COLORS*/
+  --background: #ffffff;
+  --onBackground: #000000;
+
+  --primary: #000000;
+  --onPrimary: #ffffff;
+
+  --secondary: #6b6b6b;
+  --onSecondary: #ffffff;
+
+  --accent: #B45AF8;
+  --onAccent: #000000;
+
+  --concealer: rgba(255, 255, 255, 0.9);  
+
+  color: var(--onBackground);
+  background-color: var(--background);
 }
 
 *{
@@ -95,6 +117,12 @@ p {
   font-weight: lighter;
 }
 
+/*
+===============================================================================
+COMMON CLASSES
+===============================================================================
+*/
+
 .inv{
     color: var(--background);
     background-color: var(--onBackground);
@@ -104,6 +132,12 @@ p {
 .indent{
   margin-left: var(--medium);
 }
+
+/*
+===============================================================================
+FONT SIZES MOBILE
+===============================================================================
+*/
 
 @media (max-width: 37rem){
   h1{
@@ -135,14 +169,3 @@ p {
   }
 }
 
-/*
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}*/

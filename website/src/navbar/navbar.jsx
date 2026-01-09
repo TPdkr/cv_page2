@@ -5,12 +5,19 @@ import hamburger from "../assets/menu.svg";
 import cross from "../assets/cross_dark.svg";
 import { useState } from "react";
 
+//theming
+import { useTheme } from "../themer.jsx";
+
 function Navbar(){
+    //NAVBAR STATE VALUES
     const [isOpen, setOpen] = useState(false);
     const close = () => setOpen(false);
     const open = () => setOpen(true);
 
     const isOpenClass = (isOpen)? styles.open : styles.closed;
+
+    //THEME SWITCHER
+    const {toggleTheme} = useTheme();
 
     return (
         <nav className={styles.Navbar}>
@@ -22,9 +29,13 @@ function Navbar(){
                 <HashLink smooth to="cv_page2/#exp" onClick={close}>Experience</HashLink>
                 <HashLink smooth to="cv_page2/#edu" onClick={close}>Education</HashLink>
             </div>
-            <p className={styles.header}>
-                cv_page2.html
-            </p>
+            <div className={styles.header}>
+                <p className={styles.switch} onClick={toggleTheme}>switch theme</p>
+                <p>
+                    cv_page2.html
+                </p>
+            </div>
+            
         </nav>
     );
 }

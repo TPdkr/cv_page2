@@ -26,6 +26,16 @@
     display: none;
 }
 
+.header{
+    display: flex;
+    flex-direction: row;
+    gap: var(--small);
+}
+
+.switch{
+    color: red;
+}
+
 @media (max-width: 37rem){
     /* button for opening and closing the navbar*/
     .hamburger.closed{

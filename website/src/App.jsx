@@ -4,16 +4,16 @@ import Navbar from './navbar/navbar';
 import MainPage from './mainpage/mainpage';
 import Building from './hidden_pages/building';
 
-/*
-<!--
-          <a href="https://react.dev" target="_blank">
-            <img src={reactLogo} className="logo react" alt="React logo" />
-          </a>-->
-*/
+//theme context is imported from a file
+import { useTheme} from './themer.jsx';
 
 function App() {
+  //theme is requested and specified at the very top component
+  const {isLight} = useTheme();
+  const className = (isLight)? "light" : "";
+
   return (
-    <>
+    <div className={className}>
       <BrowserRouter>
         <Navbar/>
           <Routes>
@@ -23,7 +23,7 @@ function App() {
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>
           </Routes>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
