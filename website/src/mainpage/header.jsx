@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import star from "../assets/star_dark.svg";
 import star2 from "../assets/star_sharp_dark.svg";
-import mePic from "../assets/me_dark.png";
+import mePic from "../assets/me.png";
 
 /**
  * Header of the main page
