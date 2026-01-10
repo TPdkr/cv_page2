@@ -9,8 +9,14 @@ import cross_d from "../assets/cross_dark.svg";
 
 import { useTheme } from "../themer.jsx";
 
+
+
+import { getCheck } from "../navbar/check.jsx";
+
 function Contacts(){
     const navigate = useNavigate();
+    //cv
+    const {isSafe} = getCheck();
 
     //POP UP MENU AND ITS STATE
     const popUpState = usePopUp();
@@ -30,6 +36,16 @@ function Contacts(){
     const toPhone = ()=>{
         window.location.href="tel:4915256406909";
     };
+
+    const toCV = ()=>{
+        const link = document.createElement('a');
+        console.log("clicking cv link");
+        const cv1 = "/cv_page2/assets/me.png";
+        const cv2 = "/cv_page2/assets/frog.gif";
+        link.href = isSafe ? cv1 : cv2;
+        //link.download = `${isSafe ? 'frog' : 'glitch'}.gif`;
+        link.click();
+    }
 
     return (
         <div className={styles.content}>
@@ -75,7 +91,7 @@ function Contacts(){
                     <Button type="bright" onClick={toPhone}>
                         Phone
                     </Button>
-                    <Button type="bright">
+                    <Button type="bright" onClick={toCV}>
                         CV
                     </Button>
                     <Button type="bright">
