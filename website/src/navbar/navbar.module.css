@@ -45,6 +45,7 @@ THEME SWITCH
     overflow: hidden;
     height: 2.7rem;
     width: 2.7rem;
+    cursor: pointer;
 }
 
 .sun,.moon{
