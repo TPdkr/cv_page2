@@ -3,6 +3,17 @@ New personal website repository. Now with better design and react! Currently in 
 
 [Main page](https://tpdkr.github.io/cv_page2/)
 
+# Project progress
+Not all pages/parts are working yet
+- main page ✅
+- error page ✅
+- theming ✅
+- navigation bar ✅
+- cv link ❌
+- share page ❌
+- projects catalouge ❌
+- individual project pages❌
+
 # Project details
 ## Langauges, frameworks and tools
 Mainly implemented everything using react, GitHub pages for hosting and  with GitHub for version control.
