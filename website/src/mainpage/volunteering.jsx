@@ -1,7 +1,39 @@
 import Separator from "../atomics/separator";
 import styles from "./volunteering.module.css";
 
+import { getCheck } from "../navbar/check.jsx";
+
 function Volunteering(){
+    const {isSafe} = getCheck();
+    
+    if(isSafe){
+        console.log("you are in safery");
+    } else {
+        console.log("you are not in safety");
+    }
+
+    const spectrum = (
+        <>
+            {/** SPECTRUM CLUB */}
+            <div>
+                <p className="inv">SPECTRUM CLUB</p>
+                <p><br></br>
+                    <b>BOARD MEMBER OF SPECTRUM, CONSTRUCTOR UNIVERSITY BREMEN</b><br></br>
+                    2023-2026<br></br><br></br>
+
+                    Participated in a queer straight alliance organization. Helped organize club and campus wide events and support the local community.
+                </p>
+                <p><br></br>RESPONSIBILITES:</p>
+                <p className="indent">
+                    - managing club finances<br></br>
+                    - event planning and organization<br></br>
+                    - participating in board meetings<br></br>
+                    - applying for and aquiring funding<br></br>
+                </p>
+            </div>
+        </>
+    )
+
     return (<>
     <div className={styles.header}>
         <Separator simb="*"/>
@@ -20,14 +52,15 @@ function Volunteering(){
 
             Organized events and onboarded people to the art and craft of crochet. Managed club finances.
         </p>
-        <p className="indent"><br></br>
-            RESPONSIBILITES:<br></br>
+        <p><br></br>RESPONSIBILITES:</p>
+        <p className="indent">
             - managing club hours<br></br>
             - teaching newcomers<br></br>
             - club financial records<br></br>
             - promotion of events and the club on university campus<br></br>
         </p>
     </div>
+    {(isSafe)? spectrum : <></>}
     {/** PEER MENTORSHIP */}
     <div>
         <p className="inv">PEER MENTOR</p>
@@ -37,8 +70,8 @@ function Volunteering(){
 
             Volunteered to help new students find their way around campus and inform them on univeristy matters. Also, focused on promoting health and informing about the health system.
         </p>
-        <p className="indent"><br></br>
-            RESPONSIBILITES:<br></br>
+        <p><br></br>RESPONSIBILITES:</p>
+        <p className="indent">
             - helping with organizing campus events<br></br>
             - introducing students to how university life runs<br></br>
             - looking over an assigned group of 1st year student and helping them<br></br>

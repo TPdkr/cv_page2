@@ -4,11 +4,14 @@ import './index.css'
 import App from './App.jsx'
 
 import { ThemeProvider } from './themer.jsx'
+import { MyContextProvider } from './navbar/check.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider>
-       <App />
+      <MyContextProvider>
+        <App />
+      </MyContextProvider>
     </ThemeProvider>
   </StrictMode>,
 )
