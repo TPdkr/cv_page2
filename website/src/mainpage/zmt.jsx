@@ -17,7 +17,7 @@ function Zmt(){
                             At leibnitz insititute for marine research
                         </h4>
                         <p className="inv"> TASKS</p>
-                        <p className={styles.tasks}>
+                        <p className={styles.tasks}><br></br>
                                 - formatiing and gathering data with python and pandas<br></br>
                                 - uni and multivaribal analysis<br></br>
                                 - data transformation for better model performance<br></br>

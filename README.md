@@ -19,6 +19,7 @@ Mainly implemented everything using react, GitHub pages for hosting and  with Gi
 - VS code for implementation
 - [tooooools.app](https://www.tooooools.app/effects/dots) for images filter
 - [feather icons](https://feathericons.com/)
+- [ip api](https://api.country.is/)
 
 # Repository
 ## File structure

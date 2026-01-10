@@ -27,8 +27,8 @@ function Footer(){
                     <h4>
                         CONTACTS:
                     </h4>
-                    <h4 onClick={toEmail} className={styles.link}>- [EMAIL] (TPDKRT@GMAIL.COM)</h4>
-                    <h4 onClick={toGit} className={styles.link}>- [GITHUB] (HTTPS://GITHUB.COM/TPDKR)</h4>
+                    <h4 onClick={toEmail} className={styles.link}>- TPDKRT@GMAIL.COM</h4>
+                    <h4 onClick={toGit} className={styles.link}>- HTTPS://GITHUB.COM/TPDKR</h4>
                     <img src={bop} className={styles.bop}></img>
                 </div>
                 <p>

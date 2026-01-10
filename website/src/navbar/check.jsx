@@ -9,9 +9,9 @@ export const getCheck = () => {
 async function checkCountry(){
     try{
         //data is fetched
-        const response = await fetch('http://ip-api.com/json/');
+        const response = await fetch('https://api.country.is/');
         const data = await response.json();
-        const country = data.countryCode;
+        const country = data.country;
 
         console.log("data fetched successfully");
 
