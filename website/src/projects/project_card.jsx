@@ -8,7 +8,7 @@ function ProjectCard({project}){
     }
 
     return(
-        <div className={styles.cardContainer} id={project.name}>
+        <div className={styles.cardContainer} key={project.name}>
             {/** card */}
             <div className={styles.card}>
                 {/** this is the header of the card */}

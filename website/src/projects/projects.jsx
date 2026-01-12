@@ -2,6 +2,7 @@ import styles from "./projects.module.css";
 import ProjectCard from "./project_card";
 
 import os_preview from "../assets/projects/os/preview.png";
+import about_preview from "../assets/projects/about/preview.png";
 import Footer from "../navbar/footer";
 
 import { useTheme } from "../themer.jsx";
@@ -10,24 +11,26 @@ import sunset_l from "../assets/projects/sunset_light.png";
 
 const projectsList = [
     {
-        name:"os",
-        pic: os_preview,
-        title: "Operating systems",
-        year: "2025",
-        color: "C",
-        desc: "Operating systems course assignments.",
-        tags: ["C", "Makefiles"],
+        name:"about",
+        pic: about_preview,
+        title: "Personal website",
+        year: "2026",
+        color: "React",
+        desc: "Personal website with experince and project info.",
+        tags: ["React", "HTML","JS","CSS","vite"],
         type: "uni"
     },
     {
         name:"os",
+        pic: os_preview,
         title: "Operating systems",
-        year: "2025",
+        year: "2024",
         color: "C",
         desc: "Operating systems course assignments.",
         tags: ["C", "Makefiles"],
         type: "uni"
     },
+    
 ]
 
 function Projects(){
@@ -61,11 +64,7 @@ function Projects(){
             {/** this is the list of projects */}
             <div className={styles.cardsWrap}>
                 <div className={styles.projectsCards}>
-                    <ProjectCard project={projectsList[0]}></ProjectCard>
-                    <ProjectCard project={projectsList[0]}></ProjectCard>
-                    <ProjectCard project={projectsList[0]}></ProjectCard>
-                    <ProjectCard project={projectsList[0]}></ProjectCard>
-                    <ProjectCard project={projectsList[0]}></ProjectCard>
+                    {projectsList.map((project)=><ProjectCard project={project} key={project.name}/>)}
                 </div>
             </div>
         </div>
