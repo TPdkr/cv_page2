@@ -65,15 +65,17 @@ ASSIGNMENT
     display: flex;
     flex-direction: column;
     gap: var(--medium);
+    align-items: center;
 }
 
 .assignment{
-    max-width: 70rem;
     display: flex;
     flex-direction: column;
     gap: var(--small);
+    max-width: 40rem;
 }
 
 .intermission{
     color: var(--secondary);
+    max-width: 40rem;
 }

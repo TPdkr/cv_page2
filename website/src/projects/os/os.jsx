@@ -18,7 +18,7 @@ function OS(){
                 <div>
                     <ProjectSnapshot tags={tags} date={year}/>
                     <h2 className="inv">DESCRIPTION</h2>
-                    <p className="indent">
+                    <p className="">
                     <br></br>
                     In my second year at Constructor University I completed the Operating systems course, that included many assignments.
                     A significant ammount of them involved programming in <b>C</b> and using <b>Makefiles</b>. The course and assignments focused on 
@@ -71,9 +71,9 @@ function OS(){
                     </Assignment>
                     {/** intermission why assignments are not mentioned */}
                     <div>
-                        <Separator simb="- "/>
+                        
                         <h4 className={styles.intermission}>Assignment 6-7 did not have a coding part and thus not uploaded to GitHub</h4>
-                        <Separator simb="- "/>
+                       
                     </div>
                     {/** list continues */}
                     <Assignment 
