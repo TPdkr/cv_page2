@@ -1,0 +1,92 @@
+/*
+===============================================================================
+CARD
+===============================================================================
+*/
+.cardContainer{
+    background-color: var(--onBackground);
+    cursor: pointer;
+    overflow: hidden;
+    width: max-content;
+}
+
+.card{
+    background-color: var(--background);
+    max-width: 20rem;
+    padding: var(--small);
+
+    --C: rgb(56, 42, 165);
+    transition: all 0.5s ease-in;
+}
+
+.card:hover{
+    transform: translateX(var(--medium)) translateY(var(--medium));
+}
+
+/*
+===============================================================================
+IMAGE
+===============================================================================
+*/
+
+.cardImg{
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pic{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.picDesc{
+    /*position of the content*/
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right:0;
+    /*content*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.colorSquare{
+    padding: var(--small);
+    min-width: 0.7rem;
+    min-height: 0.7em;;
+}
+
+@media (max-width: 37rem){
+    .pic{
+        display: none;
+    }
+
+    .picDesc{
+        position: static;
+        bottom: unset;
+        left: unset;
+        right:unset;
+    }
+
+    .colorSquare{
+        padding: 0;
+        min-width: 1.6rem;
+    }
+}
+
+/*
+===============================================================================
+TEXT
+===============================================================================
+*/
+
+.cardText{
+    margin-top: var(--small);
+}
+
+.tags{
+    margin-top: var(--medium);
+    color: var(--onBackground);
+}

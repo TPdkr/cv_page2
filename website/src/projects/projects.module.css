@@ -1,0 +1,118 @@
+.projectsList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    gap: var(--giant);
+    margin-bottom: var(--big);
+    /*max-width: 100%;
+    overflow: hidden;*/
+}
+
+/*
+===============================================================================
+HEADER
+===============================================================================
+*/
+
+/*.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: var(--giant);
+    margin-left: var(--medium);
+    margin-right: var(--medium);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.headerText h4{
+    margin-top: var(--big);
+    color: var(--secondary);
+}
+
+.headerText h1{
+    line-height: 8rem;
+}
+
+.headerImg{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+    justify-content: flex-end;
+    margin-right: 17rem;
+}
+
+.headerElipse{
+    max-width: 13rem;
+    margin-right: -7rem;
+    transform: rotate(10deg);
+    transition: all 0.5s ease;
+}
+
+.headerElipse:hover{
+    transform: rotate(30deg) scale(1.1) translateY(3rem);
+
+}
+
+.headerImg img:first-child .headerElipse{
+    margin-right: 0;
+}*/
+
+.header{
+    width: 100%;
+    margin-top: var(--medium);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sunset{
+    width: 100%;
+}
+
+.subtitle{
+    color: var(--secondary);
+    max-width: 80rem;
+    font-weight: 100;
+}
+
+.header h2, .header h4{
+    margin: 0 var(--medium);
+}
+
+.header h2{
+    margin-bottom: var(--medium);
+}
+
+@media (max-width: 37rem){
+    .header{
+        text-align: left;
+        align-items: left;
+    }
+}
+
+
+/*
+===============================================================================
+LIST OF CARDS
+===============================================================================
+*/
+
+.cardsWrap{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.projectsCards{
+    margin: 0 var(--medium);
+    width: fit-content;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: var(--small);
+}

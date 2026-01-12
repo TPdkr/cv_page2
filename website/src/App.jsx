@@ -6,6 +6,7 @@ import Building from './hidden_pages/building';
 
 //theme context is imported from a file
 import { useTheme} from './themer.jsx';
+import Projects from './projects/projects.jsx';
 
 function App() {
   //theme is requested and specified at the very top component
@@ -18,7 +19,7 @@ function App() {
         <Navbar/>
           <Routes>
             <Route path="cv_page2/" element={<MainPage/>}></Route>
-            <Route path="cv_page2/projects/" element={<Building/>}></Route>
+            <Route path="cv_page2/projects/" element={<Projects/>}></Route>
             <Route path="cv_page2/error/" element={<Building/>}></Route>
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>
           </Routes>
