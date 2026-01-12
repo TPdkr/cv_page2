@@ -4,19 +4,17 @@ As stated in the README file the [tooooools.app](https://www.tooooools.app/effec
 
 ## Projects list
 This is how I styles the images for the project list page. The most crucial ones are highlighted with bold.
+
+Filter: dither
 #### pre-processing
-- **blur: 5**
+- **blur: 2**
 - **grain: 0.5**
 - gamma: 1
 - black point: 0
 - white point: 255
 #### post-processing
-- **canvs size: 500**
-- threshold 128
-- grid: regular
-- grid angle: 0
-- min dot size: 1
-- max dot size: 10
-- corner radius: 4
-- step size: 8
-- noise: 2
+- **canvs size: 300**
+- pattern: F-S
+- pixel size: 2
+- color mode: No
+- threshold 255
