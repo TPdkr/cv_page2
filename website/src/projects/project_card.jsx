@@ -1,14 +1,21 @@
 import styles from "./project_card.module.css";
+import { useNavigate } from "react-router-dom";
 
 function ProjectCard({project}){
+    //navigation part
+    const navigate = useNavigate();
+
+    const toProject = ()=>{navigate(`./${project.name}/`)}
+    //tags need to be turbed into a string
     const tag_str = (project.tags).join(" | ");
 
+    //color is not static and depends on the project type
     const colorSquareSt ={
         backgroundColor: `var(--${project.color})`
     }
 
     return(
-        <div className={styles.cardContainer} key={project.name}>
+        <div className={styles.cardContainer} key={project.name} onClick={toProject}>
             {/** card */}
             <div className={styles.card}>
                 {/** this is the header of the card */}

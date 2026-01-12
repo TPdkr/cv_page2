@@ -1,0 +1,26 @@
+.header{
+    position: relative;
+    margin-top: var(--medium);
+}
+
+.headerImg{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    max-height: 20rem;
+    opacity: 0.5;
+}
+
+.header h2{
+    position: absolute;
+    top: var(--medium);
+    left: var(--medium);
+    max-width: 30rem;
+}
+
+.pageContent{
+    display: flex;
+    flex-direction: column;
+    padding: var(--medium);
+    gap: var(--giant);
+}
