@@ -23,6 +23,10 @@ GENERAL STYLING
 
   --concealer: rgba(0, 0, 0, 0.9);
 
+  /** */
+  --C: rgb(56, 42, 165);
+  --React: rgb(89, 195, 219);
+  --Makefiles: rgb(219, 126, 89);
 
   color-scheme: light dark;
 
@@ -113,9 +117,12 @@ h5{
   font-size: 1.5rem;
 }
 
-p {
+p, p b {
   font-size: 1.2rem;
   color: var(--secondary);
+}
+
+p{
   font-weight: lighter;
 }
 
@@ -162,7 +169,7 @@ FONT SIZES MOBILE
     font-size: 1rem;
   }
 
-  p{
+  p, p b{
     font-size: 1rem;
   }
 
