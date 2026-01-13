@@ -24,10 +24,6 @@ HEADER
     max-width: 30rem;
 }
 
-.loc{
-    margin-top: var(--medium);
-}
-
 /*
 ===============================================================================
 SNAPSHOT
@@ -39,47 +35,12 @@ SNAPSHOT
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .snapTags{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: var(--tiny);
-}
-
-/*
-===============================================================================
-CONTENT
-===============================================================================
-*/
-.pageContent{
-    display: flex;
-    flex-direction: column;
-    padding: var(--medium);
-    gap: var(--giant);
-    padding-bottom: var(--giant);
-}
-
-/*
-===============================================================================
-ASSIGNMENT
-===============================================================================
-*/
-.assignmentsList{
-    display: flex;
-    flex-direction: column;
-    gap: var(--medium);
-    align-items: center;
-}
-
-.assignment{
-    display: flex;
-    flex-direction: column;
-    gap: var(--small);
-    max-width: 40rem;
-}
-
-.intermission{
-    color: var(--secondary);
-    max-width: 40rem;
 }

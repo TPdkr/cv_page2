@@ -1,0 +1,11 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: var(--medium);
+    gap: var(--giant);
+    padding-bottom: var(--giant);
+}
+
+.loc{
+    margin-top: var(--medium);
+}

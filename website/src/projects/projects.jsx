@@ -1,9 +1,11 @@
 import styles from "./projects.module.css";
 import ProjectCard from "./project_card";
+import Footer from "../navbar/footer";
 
+//preview of the projects
 import os_preview from "../assets/projects/os/preview.png";
 import about_preview from "../assets/projects/about/preview.png";
-import Footer from "../navbar/footer";
+import vision_preview from "../assets/projects/vision/preview.png";
 
 import { useTheme } from "../themer.jsx";
 import sunset_d from "../assets/projects/sunset_dark.png";
@@ -18,6 +20,16 @@ const projectsList = [
         color: "React",
         desc: "Personal website with experince and project info.",
         tags: ["React", "HTML","JS","CSS","vite"],
+        type: "personal"
+    },
+    {
+        name:"vision",
+        pic: vision_preview,
+        title: "Computer vision course",
+        year: "2025",
+        color: "Python",
+        desc: "Computer vision course assignments.",
+        tags: ["Python", "Jupyter_notebooks"],
         type: "uni"
     },
     {

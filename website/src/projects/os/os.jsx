@@ -27,6 +27,7 @@ function OS(){
                     <br></br><br></br>
                     Also, the course explored the UNIX POSIX standard APIs in theory and practice. 
                     </p>
+                    <h4 className={styles.loc}>COMPLETED AT: CONSTRUCTOR UNIVERISTY BREMEN</h4>
                 </div>
                 {/** these are all my assignments */}
                 <div className={styles.assignmentsList}>
