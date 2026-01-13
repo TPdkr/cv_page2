@@ -5,6 +5,38 @@ import styles from "./vision.module.css";
 function Vision(){
     const tags = ["Python", "Jupyter_notebooks"];
     const date ="2025";
+
+    const assignmentsList = [
+        {
+            title:"Assignment 1: convolution and correlation",
+            desc:"The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them in Python using numpy."
+
+        },
+        {
+            title:"Assignment 2: edge detection",
+            desc: "The assignment asks to implement the canny edge detection algorithm."
+        },
+        {
+            title: "Assignment 3: panoramas",
+            desc: "This challenge is focused on implementing a panorama using Harris corner, RANSAC and hog."
+        },
+        {
+            title: "Assignment 4: object recognition",
+            desc: "Here we were tasked with creating an object recognition model using a convolutional neural network."
+        },
+        {
+            title: "Assignment 5: face recongition, eigenfaces",
+            desc: "Eigenfaces algorithm, coding a simple face recognition algorithm that works across different scales."
+        },
+        {
+            title: "Assignment 6: cameras and their transformation",
+            desc: "This assignment was not mandatory and thus not fully completed. Using cameras and math behind them."
+        },
+        {
+            title: "Assignment 7: clustering in images",
+            desc: "Not a mandatory assignment I completed for bonus points. It is about segmenting images using different algorithms and feature vectors."
+        }
+    ]
     return (<>
         <SimpleHeader title="COMPUTER VISION COURSE" src={header}/>
         <div className={styles.content}>
@@ -25,85 +57,27 @@ function Vision(){
             </div>
             {/** these are the assignments */}
             <div>
-
-            <h3 className="inv">ASSIGNMENTS</h3>
-            <div className={styles.assignments}>
-                <div className={styles.assignment}>
-                    <h4>
-                        Assignment 1: convolution and correlation
-                    </h4>
-                    <p className="inv">ABOUT:</p>
-                    <p>
-                        The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them
-                        in Python using numpy. 
-                    </p>
+                <h3 className="inv">ASSIGNMENTS</h3>
+                <div className={styles.assignments}>
+                    {assignmentsList.map((assignment)=><Assignment title={assignment.title} desc={assignment.desc}/>)}
                 </div>
-                <div className={styles.assignment}>
-                    <h4>
-                        Assignment 2: edge detection
-                    </h4>
-                    <p className="inv">ABOUT:</p>
-                    <p>
-                        The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them
-                        in Python using numpy. 
-                    </p>
-                </div>
-                <div className={styles.assignment}>
-                    <h4>
-                        Assignment 3: convolution and correlation
-                    </h4>
-                    <p className="inv">ABOUT:</p>
-                    <p>
-                        The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them
-                        in Python using numpy. 
-                    </p>
-                </div>
-                <div className={styles.assignment}>
-                    <h4>
-                        Assignment 4: convolution and correlation
-                    </h4>
-                    <p className="inv">ABOUT:</p>
-                    <p>
-                        The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them
-                        in Python using numpy. 
-                    </p>
-                </div>
-                <div className={styles.assignment}>
-                    <h4>
-                        Assignment 5: convolution and correlation
-                    </h4>
-                    <p className="inv">ABOUT:</p>
-                    <p>
-                        The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them
-                        in Python using numpy. 
-                    </p>
-                </div>
-                <div className={styles.assignment}>
-                    <h4>
-                        Assignment 6: convolution and correlation
-                    </h4>
-                    <p className="inv">ABOUT:</p>
-                    <p>
-                        The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them
-                        in Python using numpy. 
-                    </p>
-                </div>
-                <div className={styles.assignment}>
-                    <h4>
-                        Assignment 7: convolution and correlation
-                    </h4>
-                    <p className="inv">ABOUT:</p>
-                    <p>
-                        The assignment explores basic computer vision operations of convolution and correlation. It asks to implement them
-                        in Python using numpy. 
-                    </p>
-                </div>
-            </div>
             </div>
             
         </div>
         
     </>)
+}
+
+function Assignment({title, desc}){
+    return (
+        <div className={styles.assignment} key={title}>
+            <h4>
+                {title}
+            </h4>
+            <p className="inv">ABOUT:</p>
+            <p>{desc}</p>
+        </div>
+    );
 }
 
 export default Vision

@@ -14,6 +14,7 @@
     display: grid;   
     gap: var(--medium);
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: var(--medium);
 }
 
 @media (max-width: 64rem){
@@ -30,4 +31,8 @@
 
 .assignment{
     max-width: 40rem;
+}
+
+.assignment h4{
+    margin-bottom: var(--small);
 }
