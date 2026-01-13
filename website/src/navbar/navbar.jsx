@@ -36,6 +36,7 @@ function Navbar(){
                 <Link to="cv_page2/projects/" onClick={close}>Projects</Link>
                 <HashLink smooth to="cv_page2/#exp" onClick={close}>Experience</HashLink>
                 <HashLink smooth to="cv_page2/#edu" onClick={close}>Education</HashLink>
+                <Link to="cv_page2/share/">Share</Link>
             </div>
             <div className={styles.header}>
                 <div className={`${styles.themeSwitch} ${switchState}`} onClick={toggleTheme}>

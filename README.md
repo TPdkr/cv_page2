@@ -12,10 +12,10 @@ Not all pages/parts are working yet
 - error page ✅
 - theming ✅
 - navigation bar ✅
-- cv link ❌
-- share page ❌
+- cv link ❌ (waiting for updates for the cv)
+- share page ✅
 - projects catalouge ✅
-- individual project pages ✅/❌ 2/3 displayed are working
+- individual project pages ✅❌ (the ones visible are functional, but adding all takes time)
 
 # Project details
 ## Langauges, frameworks and tools

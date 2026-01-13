@@ -11,6 +11,7 @@ import Building from './hidden_pages/building';
 import Projects from './projects/projects.jsx';
 import OS from './projects/os/os.jsx';
 import Vision from './projects/vision/vision.jsx';
+import Share from './other/share.jsx';
 
 function App() {
   //theme is requested and specified at the very top component
@@ -28,6 +29,7 @@ function App() {
             <Route path="cv_page2/projects/vision/" element={<Vision/>}></Route>
             <Route path="cv_page2/error/" element={<Building/>}></Route>
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>
+            <Route path="cv_page2/share/" element={<Share/>}></Route>
           </Routes>
       </BrowserRouter>
     </div>

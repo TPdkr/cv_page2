@@ -1,0 +1,16 @@
+.sharePage{
+    min-height: 100vh;
+    padding-top: var(--big);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--medium);
+    padding: 0 var(--small);
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+
+}
