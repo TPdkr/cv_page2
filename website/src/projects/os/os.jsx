@@ -1,7 +1,10 @@
 import styles from "./os.module.css";
 import header from "../../assets/projects/os/header.png"
 
+
+
 import Separator from "../../atomics/separator.jsx";
+import { ProjectSnapshot, SimpleHeader } from "../../atomics/projects.jsx";
 
 function OS(){
     const tags = ["C", "Makefiles"];
@@ -9,10 +12,7 @@ function OS(){
 
     return (
         <>
-            <div className={styles.header}>
-                <img src={header} className={styles.headerImg}/>
-                <h2>OPERATING SYSTEMS ASSIGNMENTS</h2>
-            </div>
+            <SimpleHeader title="OPERATING SYSTEMS ASSIGNMENTS" src={header}/>
             <div className={styles.pageContent}>
                 
                 <div>
@@ -120,7 +120,7 @@ function Assignment({title, repoLink, children}){
     );
 }
 
-function ProjectSnapshot({date, tags}){
+/*function ProjectSnapshot({date, tags}){
 
     return (
         <div className={styles.projectSnapshot}>
@@ -140,6 +140,6 @@ function ProjectSnapshot({date, tags}){
             </div>
         </div>
     );
-}
+}*/
 
 export default OS
