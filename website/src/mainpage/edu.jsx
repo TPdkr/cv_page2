@@ -23,9 +23,8 @@ function Edu(){
                 <img src={uni} className={styles.uniPic}/>
                 {/** text contents */}
                 <h4>---2023-PRESENT</h4>
-                <p>
+                <p className={styles.uniDesc}>
                     During my studies here I advanced my technical and non technical skills. I actively participated in campus live and in classes.
-                    <br></br><br></br>
                     I learned essential knowledge in the field of computer science and completed many group projects during my studies.
                     <br></br><br></br>
                     I volunteered as a peer mentor for 2 years as well as lead student clubs on campus, which made me better at clear communication,
@@ -57,7 +56,6 @@ function Edu(){
                     </h3>
                 </div>
                 <div className={styles.sescGrid}>
-                    <img src={school} className={styles.schoolPic}></img>
                     <div>
                         <h4>---2020-2023</h4>
                         <p>
@@ -76,6 +74,7 @@ function Edu(){
                             </p></FilledCell>
                         </Grid>
                     </div>
+                    <img src={school} className={styles.schoolPic}></img>
                 </div>
             </div>
         </>

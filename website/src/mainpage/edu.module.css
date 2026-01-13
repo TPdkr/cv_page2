@@ -35,6 +35,10 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.uniDesc{
+    margin-top: var(--medium);
+}
+
 @media (max-width: 64rem){
     .uniGrades{
         grid-template-columns: 1fr 1fr;
@@ -62,6 +66,8 @@
 
 .schoolPic{
     max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
 }
 .schoolGpa{
     margin-top: var(--big);
@@ -73,11 +79,3 @@
         grid-template-columns: 1fr;
     }
 }
-
-/*.onBack{
-    color: var(--onBackground);
-}
-
-.onPr{
-    color: var(--background);
-}*/

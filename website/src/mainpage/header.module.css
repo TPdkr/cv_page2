@@ -16,6 +16,7 @@
 .suptitle{
     color: var(--secondary);
     font-weight: lighter;
+    max-width: 60rem;
 }
 
 .bottom{

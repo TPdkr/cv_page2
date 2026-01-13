@@ -36,11 +36,11 @@ function Volunteering(){
 
     return (<>
     <div className={styles.header}>
-        <Separator simb="*"/>
+        <Separator simb="-"/>
         <h2>
             VOLUNTEERING
         </h2>
-        <Separator simb="*"/>
+        <Separator simb="-"/>
     </div>
     
     {/** CROCHET CLUB */}
