@@ -1,6 +1,9 @@
 # cv page 2.0(early development)
 New personal website repository. Now with better design and react! Currently in early development.
 
+IMPORTANT NOTE: due to the way react + github pages work reloading on a non main page can seem to lead to 404, which
+can be simply resolved by going back to the main page and reloading there if needed.
+
 [Main page](https://tpdkr.github.io/cv_page2/)
 
 # Project progress
@@ -11,8 +14,8 @@ Not all pages/parts are working yet
 - navigation bar ✅
 - cv link ❌
 - share page ❌
-- projects catalouge ❌
-- individual project pages❌
+- projects catalouge ✅
+- individual project pages ✅/❌ 2/3 displayed are working
 
 # Project details
 ## Langauges, frameworks and tools
