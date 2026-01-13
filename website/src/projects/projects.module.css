@@ -91,6 +91,11 @@ HEADER
         text-align: left;
         align-items: left;
     }
+
+    .sunset{
+        aspect-ratio: 1.5;
+        object-fit: cover;
+    }
 }
 
 

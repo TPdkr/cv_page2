@@ -24,6 +24,13 @@ HEADER
     max-width: 30rem;
 }
 
+@media (max-width: 37rem){
+    .headerImg{
+        aspect-ratio: 1.5;
+        object-fit: cover;
+    }
+}
+
 /*
 ===============================================================================
 SNAPSHOT
