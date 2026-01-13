@@ -20,16 +20,3 @@
     cursor: pointer;
 }
 
-.bop{
-    position: absolute;
-    top: 0;
-    right:0;
-    max-width: 5rem;
-}
-
-@media (max-width: 37rem){
-    .bop{
-        display: none;
-    }
-}
-
