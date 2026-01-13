@@ -6,7 +6,7 @@ HEADER
 .header{
     position: relative;
     margin-top: var(--medium);
-    margin-bottom: var(--giant);
+    margin-bottom: var(--big);
 }
 
 .headerImg{
@@ -36,6 +36,7 @@ SNAPSHOT
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: var(--tiny);
 }
 
 .snapTags{
