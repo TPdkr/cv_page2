@@ -1,6 +1,6 @@
 import styles from "./about.module.css";
 
-import header from "../../assets/projects/os/header.png"
+import header from "../../assets/projects/about/header.png"
 import { SimpleHeader, ProjectDescription } from "../../atomics/projects.jsx";
 
 function About(){
@@ -9,7 +9,7 @@ function About(){
 
     return (
         <>
-            <SimpleHeader title="Portfolio website 2.0" src={header}/>
+            <SimpleHeader title="PORTFOLIO WEBSITE 2.0" src={header}/>
             <div className={styles.content}>
                 <ProjectDescription date={date} tags={tags} location="PERSONAL PROJECT">
                     <p>
