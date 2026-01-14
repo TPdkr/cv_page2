@@ -1,4 +1,4 @@
-import { ProjectSnapshot, SimpleHeader } from "../../atomics/projects";
+import {SimpleHeader, ProjectDescription } from "../../atomics/projects";
 import header from "../../assets/projects/vision/header.png"
 import styles from "./vision.module.css";
 
@@ -41,9 +41,7 @@ function Vision(){
         <SimpleHeader title="COMPUTER VISION COURSE" src={header}/>
         <div className={styles.content}>
             {/** this is the header, the goal is to contain all crucial info kind of like an abstract */}
-            <div>
-                <ProjectSnapshot date={date} tags={tags}/>
-                <h2 className="inv">DESCRIPTION</h2>
+            <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
                 <p>
                     <br></br>
                     This course explored the basics of computer vision and image processing. The assignments matched the lectures and asked us to 
@@ -53,8 +51,7 @@ function Vision(){
                     <br></br><br></br>
                 </p>
                 <a href="https://github.com/TPdkr/computer_vision_cub_hw" target="_blank">GitHub repository computer vision assignments</a>
-                <h4 className={styles.loc}>COMPLETED AT: CONSTRUCTOR UNIVERISTY BREMEN</h4>
-            </div>
+            </ProjectDescription>
             {/** these are the assignments */}
             <div>
                 <h3 className="inv">ASSIGNMENTS</h3>

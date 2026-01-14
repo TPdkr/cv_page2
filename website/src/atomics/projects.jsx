@@ -37,3 +37,13 @@ export function ProjectSnapshot({date, tags}){
         </div>
     );
 }
+
+export function ProjectDescription({date, tags, location, children}){
+    return(
+    <div>
+        <ProjectSnapshot date={date} tags={tags}/>
+        <h2 className="inv">DESCRIPTION</h2>
+        {children}
+        <h4 className={styles.loc}>{location}</h4>
+    </div>);
+}

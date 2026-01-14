@@ -1,10 +1,7 @@
 import styles from "./os.module.css";
 import header from "../../assets/projects/os/header.png"
 
-
-
-import Separator from "../../atomics/separator.jsx";
-import { ProjectSnapshot, SimpleHeader } from "../../atomics/projects.jsx";
+import { SimpleHeader, ProjectDescription } from "../../atomics/projects.jsx";
 
 function OS(){
     const tags = ["C", "Makefiles"];
@@ -14,11 +11,8 @@ function OS(){
         <>
             <SimpleHeader title="OPERATING SYSTEMS ASSIGNMENTS" src={header}/>
             <div className={styles.pageContent}>
-                
-                <div>
-                    <ProjectSnapshot tags={tags} date={year}/>
-                    <h2 className="inv">DESCRIPTION</h2>
-                    <p className="">
+                <ProjectDescription tags={tags} date={year} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
+                    <p>
                     <br></br>
                     In my second year at Constructor University I completed the Operating systems course, that included many assignments.
                     A significant ammount of them involved programming in <b>C</b> and using <b>Makefiles</b>. The course and assignments focused on 
@@ -27,8 +21,7 @@ function OS(){
                     <br></br><br></br>
                     Also, the course explored the UNIX POSIX standard APIs in theory and practice. 
                     </p>
-                    <h4 className={styles.loc}>COMPLETED AT: CONSTRUCTOR UNIVERISTY BREMEN</h4>
-                </div>
+                </ProjectDescription>
                 {/** these are all my assignments */}
                 <div className={styles.assignmentsList}>
                     <h3 className="inv">ASSIGNMENTS</h3>
@@ -119,27 +112,5 @@ function Assignment({title, repoLink, children}){
         </div>
     );
 }
-
-/*function ProjectSnapshot({date, tags}){
-
-    return (
-        <div className={styles.projectSnapshot}>
-            <h4 className="inv">{date}</h4>
-            <div className={styles.snapTags}>
-                {tags.map((tag)=>
-                <h4 
-                className={styles.tag} 
-                key={tag}
-                style={{
-                    backgroundColor: `var(--${tag})`
-                }}
-                >
-                {tag}
-                </h4>
-            )}
-            </div>
-        </div>
-    );
-}*/
 
 export default OS
