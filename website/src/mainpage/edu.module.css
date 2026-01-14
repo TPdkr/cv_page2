@@ -78,4 +78,8 @@
     .sescGrid{
         grid-template-columns: 1fr;
     }
+
+    .schoolPic{
+        order: -1;
+    }
 }

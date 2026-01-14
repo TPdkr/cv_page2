@@ -33,10 +33,6 @@ function Contacts(){
         window.location.href="mailto:tpdkrt@gmail.com";
     };
 
-    const toPhone = ()=>{
-        window.location.href="tel:4915256406909";
-    };
-
     const toCV = ()=>{
         const link = document.createElement('a');
         console.log("clicking cv link");
@@ -87,9 +83,6 @@ function Contacts(){
                     </Button>
                     <Button type="bright" onClick={toEmail}>
                         Email
-                    </Button>
-                    <Button type="bright" onClick={toPhone}>
-                        Phone
                     </Button>
                     <Button type="bright" onClick={toCV}>
                         CV
