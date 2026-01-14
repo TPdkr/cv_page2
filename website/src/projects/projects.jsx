@@ -12,7 +12,7 @@ import sunset_d from "../assets/projects/sunset_dark.png";
 import sunset_l from "../assets/projects/sunset_light.png";
 
 const projectsList = [
-    /*{
+    {
         name:"about",
         pic: about_preview,
         title: "Personal website",
@@ -21,7 +21,7 @@ const projectsList = [
         desc: "Personal website with experince and project info.",
         tags: ["React", "HTML","JS","CSS","vite"],
         type: "personal"
-    },*/
+    },
     {
         name:"vision",
         pic: vision_preview,

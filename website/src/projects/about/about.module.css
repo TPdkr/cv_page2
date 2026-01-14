@@ -4,4 +4,38 @@
     padding: var(--medium);
     gap: var(--giant);
     padding-bottom: var(--giant);
+    max-width: 100%;
+}
+
+.highlight, .highlight b{
+    color: var(--onBackground);
+}
+
+.goals, .elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--medium);
+    max-width: 100%;
+}
+
+.goalsText, .elementsShoe{
+    display: flex;
+    flex-direction: column;
+    gap: var(--medium);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.circuit{
+    width: 100%;
+}
+
+@media (max-width: 37rem){
+    .goals, .elements{
+        grid-template-columns: 1fr;
+    }
+
+    .circuit{
+        order: -1;
+    }
 }
