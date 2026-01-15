@@ -31,10 +31,12 @@ Mainly implemented everything using react, GitHub pages for hosting and  with Gi
 ## Resources and applications
 - Lunacy for design
 - VS code for implementation
-- [tooooools.app](https://www.tooooools.app/effects/dots) for images filter
+- [tooooools.app](https://www.tooooools.app/effects/dots) for images filter (exact specifications at [filters.md](./filters.md))
 - [feather icons](https://feathericons.com/)
 - [ip api](https://api.country.is/)
 
+# Project workflow and details
+These can be found on the about page of the project itself. But also at the following file [project.md](./project.md)
 # Repository
 ## File structure
 Results were achieved by running the command below in the main and src directories of the repository.
