@@ -14,7 +14,7 @@ function SE(){
             <SimpleHeader src={header} title="Software engineering"></SimpleHeader>
             <div className="contentBox">
                 {/** header section */}
-                <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
+                <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade="88% (1.67)">
                     <p><br></br>
                         This was a group project complted in a group of 11 people over the span of 3 submissions that focused on learning how to 
                         engineer software and what project management is. It asked us to write <b>UML, system architecture, specification</b> and more

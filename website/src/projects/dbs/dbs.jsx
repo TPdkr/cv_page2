@@ -11,7 +11,7 @@ function DBs(){
     return(<>
         <SimpleHeader src={header} title="Databases and web services"></SimpleHeader>
         <div className="contentBox">
-            <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
+            <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade="95% (1.00)">
                 <p>
                     <br></br>
                     A group project for a university course aimed at producing a simple food rating website.
