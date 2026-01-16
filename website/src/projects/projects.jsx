@@ -16,7 +16,7 @@ const projectsList = [
     {
         name:"about",
         pic: about_preview,
-        title: "Personal website",
+        title: "Portfolio website 2.0",
         year: "2026",
         color: "React",
         desc: "Personal website with experince and project info.",
