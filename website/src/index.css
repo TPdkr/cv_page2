@@ -23,16 +23,30 @@ GENERAL STYLING
 
   --concealer: rgba(0, 0, 0, 0.9);
 
-  /** */
-  --C: rgb(56, 42, 165);
-  --React: rgb(89, 195, 219);
-  --CSS: rgb(89, 111, 219);
-  --vite: rgb(89, 111, 219);
-  --Makefiles: rgb(219, 126, 89);
-  --HTML:  rgb(219, 126, 89);
-  --Python: rgb(219, 208, 89);
-  --JS: rgb(219, 208, 89);
-  --Jupyter_notebooks: rgb(219, 126, 89);
+  /** langauge colors*/
+  --straightBlue: rgb(56, 42, 165);
+  --fruityBlue: rgb(89, 195, 219);
+  --concernedOrange: rgb(219, 126, 89);
+  --pissYellow: rgb(219, 208, 89);
+
+  /** exact specifications*/
+  /*dark blue*/
+  --C: var(--straightBlue);
+  --CSS: var(--straightBlue);
+  --vite: var(--straightBlue);
+  /*light blue*/
+  --React: var(--fruityBlue);
+  /*orange*/
+  --Makefiles: var(--concernedOrange);
+  --HTML: var(--concernedOrange);
+  --Jupyter_notebooks: var(--concernedOrange);
+  /*yellow*/
+  --Python: var(--pissYellow);
+  --JS: var(--pissYellow);
+  /*purpl*/
+  --SQL: var(--accent);
+  --PHP: var(--accent);
+  
 
   color-scheme: light dark;
 

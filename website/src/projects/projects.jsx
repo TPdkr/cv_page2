@@ -6,6 +6,7 @@ import Footer from "../navbar/footer";
 import os_preview from "../assets/projects/os/preview.png";
 import about_preview from "../assets/projects/about/preview.png";
 import vision_preview from "../assets/projects/vision/preview.png";
+import se_preview from "../assets/projects/se/preview.png";
 
 import { useTheme } from "../themer.jsx";
 import sunset_d from "../assets/projects/sunset_dark.png";
@@ -30,6 +31,16 @@ const projectsList = [
         color: "Python",
         desc: "Computer vision course assignments.",
         tags: ["Python", "Jupyter_notebooks"],
+        type: "uni"
+    },
+    {
+        name:"se",
+        pic: se_preview,
+        title: "Software engineering",
+        year: "2025",
+        color: "JS",
+        desc: "Course group project.",
+        tags: ["JS", "HTML", "CSS","SQL", "PHP"],
         type: "uni"
     },
     {

@@ -1,0 +1,13 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: var(--medium);
+    gap: var(--giant);
+    padding-bottom: var(--giant);
+}
+
+.textBox{
+    max-width: 80rem;
+}
