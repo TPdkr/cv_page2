@@ -1,0 +1,22 @@
+.gallery{
+    /*general styling*/
+    border: 2px solid var(--onBackground);
+    overflow-x: auto;
+    overflow-y: visible;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--onBackground);
+    color: var(--background);
+
+    /*scrollbar */
+    scrollbar-color:  var(--background) var(--onBackground);
+    scrollbar-width: var(--small);
+}
+
+.img{
+    padding: var(--tiny);
+    max-height: 17rem;
+    max-width: 30rem;
+    object-fit: cover;
+}

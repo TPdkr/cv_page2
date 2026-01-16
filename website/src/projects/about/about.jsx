@@ -4,6 +4,12 @@ import styles from "./about.module.css";
 import header from "../../assets/projects/about/header.png"
 import circuit from "../../assets/projects/about/circuit.png"
 
+//gallery
+import ref1 from "../../assets/projects/about/ref1.jpeg"
+import ref2 from "../../assets/projects/about/ref2.jpeg"
+import ref3 from "../../assets/projects/about/ref3.jpeg"
+import ref4 from "../../assets/projects/about/ref4.jpg"
+
 //projects elements
 import { SimpleHeader, ProjectDescription } from "../../atomics/projects.jsx";
 
@@ -11,10 +17,32 @@ import { SimpleHeader, ProjectDescription } from "../../atomics/projects.jsx";
 import Button from "../../atomics/button.jsx";
 import Separator from "../../atomics/separator.jsx";
 import { Cell, FilledCell } from "../../atomics/grid.jsx";
+import Gallery from "../../atomics/gallery.jsx";
 
 function About(){
+    //this is description info
     const date="2026-ONGOING";
     const tags=["React", "HTML","JS","CSS","vite"];
+
+    //this is the gallery list contents
+    const references =[
+        {
+            src: ref1,
+            desc: (<p>this is a references</p>)
+        },
+        {
+            src: ref2,
+            desc: (<p>this is a reference with a longer description that lasts multiple lines</p>)
+        },
+        {
+            src: ref3,
+            desc: (<p>this is a pic</p>)
+        },
+        {
+            src: ref4,
+            desc: (<p>this is a picture</p>)
+        }
+    ]
 
     return (
         <>
@@ -76,6 +104,8 @@ function About(){
                     </div>
                     <img src={circuit} className={styles.circuit}></img>
                 </div>
+                {/** gallery is presented here */}
+                <Gallery pictures={references}/>
                 {/** this is the elements used part */}
                 <Separator simb="-"></Separator>
                 <div className={styles.elements}>
