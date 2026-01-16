@@ -1,9 +1,10 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css'
-import Navbar from './navbar/navbar';
 
 //theme context is imported from a file
 import { useTheme} from './themer.jsx';
+
+import Navbar from './navbar/navbar';
 
 //pages
 import MainPage from './mainpage/mainpage';
@@ -14,6 +15,7 @@ import Vision from './projects/vision/vision.jsx';
 import Share from './other/share.jsx';
 import About from './projects/about/about.jsx';
 import SE from './projects/se/se.jsx';
+import DBs from './projects/dbs/dbs.jsx';
 
 function App() {
   //theme is requested and specified at the very top component
@@ -31,6 +33,7 @@ function App() {
             <Route path="cv_page2/projects/vision/" element={<Vision/>}></Route>
             <Route path="cv_page2/projects/about/" element={<About/>}></Route>
             <Route path="cv_page2/projects/se/" element={<SE/>}></Route>
+            <Route path="cv_page2/projects/dbs/" element={<DBs/>}></Route>
             <Route path="cv_page2/error/" element={<Building/>}></Route>
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>
             <Route path="cv_page2/share/" element={<Share/>}></Route>

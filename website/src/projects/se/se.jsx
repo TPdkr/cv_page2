@@ -12,7 +12,8 @@ function SE(){
     return (
         <>
             <SimpleHeader src={header} title="Software engineering"></SimpleHeader>
-            <div className={styles.content}>
+            <div className="contentBox">
+                {/** header section */}
                 <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
                     <p><br></br>
                         This was a group project complted in a group of 11 people over the span of 3 submissions that focused on learning how to 
@@ -26,7 +27,8 @@ function SE(){
                     </p>
                     <a href="https://github.com/AnuraagDeshpande/SoftwareSuperProject_repo">GitHub repository of this project</a>
                 </ProjectDescription>
-                <div className={styles.textBox}>
+                <div className="textBox">
+                    {/**project page contents */}
                     <h3>GOAL</h3>
                     <p>
                         The project aimed to create a project management software solution. The assignment says: "The project management system to be developed has to be based on
@@ -44,21 +46,21 @@ function SE(){
                         * etc.<br></br>
                     </p>
                 </div>
-                <div className={styles.textBox}>
+                <div className="textBox">
                     <h3>MY ROLE</h3>
                     <p>
                         Our team was split into 2: frontend dev and backend dev. I was part of the frontend team and code wise contributed to that
                         section of the code.
                     </p>
                 </div>
-                <div className={styles.textBox}>
+                <div className="textBox">
                     <h3>CHALLANGES</h3>
                     <p>
                         We encountered many challanges during this project. The main were learning what a lot of documentation standards meant and 
                         implementing them. Also, working as a team of 11 created space for communication issues, that were always resolved in the end.
                     </p>
                 </div>
-                <div className={styles.textBox}>
+                <div className="textBox">
                     <h3 className="inv">SUBMISSIONS</h3>
                     <p>
                         <br></br>

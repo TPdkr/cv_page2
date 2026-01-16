@@ -7,6 +7,7 @@ import os_preview from "../assets/projects/os/preview.png";
 import about_preview from "../assets/projects/about/preview.png";
 import vision_preview from "../assets/projects/vision/preview.png";
 import se_preview from "../assets/projects/se/preview.png";
+import dbs_preview from "../assets/projects/dbs/preview.png";
 
 import { useTheme } from "../themer.jsx";
 import sunset_d from "../assets/projects/sunset_dark.png";
@@ -51,6 +52,16 @@ const projectsList = [
         color: "C",
         desc: "Operating systems course assignments.",
         tags: ["C", "Makefiles"],
+        type: "uni"
+    },
+    {
+        name:"dbs",
+        pic: dbs_preview,
+        title: "Databases and web services",
+        year: "2024",
+        color: "PHP",
+        desc: "2nd year course group project on databases",
+        tags: [ "PHP","SQL","CSS","HTML","JS"],
         type: "uni"
     },
     
