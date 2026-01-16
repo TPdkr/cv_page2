@@ -66,6 +66,10 @@ IMAGE
         width: 100%;
     }
 
+    .card{
+        max-width: none;
+    }
+
     .pic{
         display: none;
     }
