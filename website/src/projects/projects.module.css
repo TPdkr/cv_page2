@@ -121,3 +121,9 @@ LIST OF CARDS
     flex-wrap: wrap;
     gap: var(--small);
 }
+
+@media (max-width: 37rem){
+    .projectsCards{
+        margin: 0;
+    }
+}

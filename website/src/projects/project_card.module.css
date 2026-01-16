@@ -62,6 +62,10 @@ IMAGE
 }
 
 @media (max-width: 37rem){
+    .cardContainer{
+        width: 100%;
+    }
+
     .pic{
         display: none;
     }
