@@ -38,10 +38,6 @@
     margin-bottom: var(--medium);
 }
 
-.tasks{
-    margin-left: var(--medium);
-}
-
 .suptitle{
     color: var(--secondary);
 }

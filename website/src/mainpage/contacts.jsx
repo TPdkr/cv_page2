@@ -50,14 +50,14 @@ function Contacts(){
                 <div className={styles.buttonRow}>
                     <Button onClick={open}>Contacts</Button>
                     <p>
-                        Find my phone, emial, GitHub and LinkdIn. Best way to reach out to me is via email. I respond withing 1-3 working days.
+                        Find my emial, GitHub and CV. Best way to reach out to me is via email. I respond withing 1-3 working days.
                     </p>
                 </div>
                 {/** this is the projects/skills shortlist */}
                 <div className={styles.buttonRow}>
                     <Button type="bright" onClick={()=>{navigate("./projects/")}}>Projects</Button>
                     <p>
-                        C/C++ | Kotlin | HTML | React |Python | CSS |PHP | Haskell |git |Linux  | GitHub | LateX
+                        C/C++ | Kotlin | HTML | JS | React | Python | CSS | PHP | Haskell | git | Linux  | GitHub | LateX
                     </p>
                 </div>
                 {/** this is the languages table */}
@@ -75,7 +75,7 @@ function Contacts(){
                     My contacts
                 </h2>
                 <p className={styles.popUpDesc}>
-                    Find my phone, emial, GitHub and LinkdIn. Best way to reach out to me is via email. I respond withing 1-3 working days.
+                    Find my emial, GitHub and CV. Best way to reach out to me is via email. I respond withing 1-3 working days.
                 </p>
                 <div className={styles.popUpLinks}>
                     <Button type="bright" onClick={toGit}>
@@ -87,9 +87,9 @@ function Contacts(){
                     <Button type="bright" onClick={toCV}>
                         CV
                     </Button>
-                    <Button type="bright">
+                    {/*<Button type="bright">
                         LinkdIn
-                    </Button>
+                    </Button>*/}
                 </div>
             </PopUp>
         </div>

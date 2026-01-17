@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css'
 
 //theme context is imported from a file
-import { useTheme} from './themer.jsx';
+import {useTheme} from './themer.jsx';
 
 import Navbar from './navbar/navbar';
 

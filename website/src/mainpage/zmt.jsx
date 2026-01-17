@@ -17,9 +17,10 @@ function Zmt(){
                             At leibnitz insititute for marine research
                         </h4>
                         <p className="inv"> TASKS</p>
-                        <p className={styles.tasks}><br></br>
+                        <p className="indent"><br></br>
                                 - formatiing and gathering data with python and pandas<br></br>
                                 - uni and multivaribal analysis<br></br>
+                                - data visualization with matplotlib<br></br>
                                 - data transformation for better model performance<br></br>
                                 - traning 3 models on ocean data and analyzing the results<br></br>
                                 - presenting project to internship supervisors and the research group<br></br>
@@ -34,6 +35,9 @@ function Zmt(){
                 <h4>
                     At leibnitz insititute for marine research
                 </h4>
+                <p><br></br>
+                    Project was started during the internship and continued in the working student role later on. More details are above.
+                </p>
             </div>
             <Separator simb="-"></Separator>
         </>

@@ -22,6 +22,7 @@ function Volunteering(){
                     2023-2026<br></br><br></br>
 
                     Participated in a queer straight alliance organization. Helped organize club and campus wide events and support the local community.
+                    Some of our events had up to 100 attendees and significant success with univeristy comunity.
                 </p>
                 <p><br></br>RESPONSIBILITES:</p>
                 <p className="indent">
@@ -42,7 +43,25 @@ function Volunteering(){
         </h2>
         <Separator simb="-"/>
     </div>
-    
+    {/** PEER MENTORSHIP */}
+    <div>
+        <p className="inv">PEER MENTOR</p>
+        <p><br></br>
+            <b>PEER MENTOR AT COLLEGE 3, CONSTRUCTOR UNIVERSITY BREMEN</b><br></br>
+            2024-ONGOING<br></br><br></br>
+
+            Volunteered to help new students find their way around campus and inform them on univeristy matters.
+            Also, focused on promoting health and informing about the German health system. Awarded for outstanding
+            performance in spring 2025.
+        </p>
+        <p><br></br>RESPONSIBILITES:</p>
+        <p className="indent">
+            - helping with organizing campus events<br></br>
+            - introducing students to how university life runs<br></br>
+            - looking over an assigned group of 1st year student and helping them<br></br>
+            - explaining the German health system<br></br>
+        </p>
+    </div>
     {/** CROCHET CLUB */}
     <div>
         <p className="inv">CROCHET CLUB</p>
@@ -54,30 +73,14 @@ function Volunteering(){
         </p>
         <p><br></br>RESPONSIBILITES:</p>
         <p className="indent">
-            - managing club hours<br></br>
+            - managing club hours(around 2 times a week)<br></br>
             - teaching newcomers<br></br>
-            - club financial records<br></br>
+            - club's financial side<br></br>
             - promotion of events and the club on university campus<br></br>
         </p>
     </div>
     {(isSafe)? spectrum : <></>}
-    {/** PEER MENTORSHIP */}
-    <div>
-        <p className="inv">PEER MENTOR</p>
-        <p><br></br>
-            <b>PEER MENTOR AT COLLEGE 3, CONSTRUCTOR UNIVERSITY BREMEN</b><br></br>
-            2024-ONGOING<br></br><br></br>
-
-            Volunteered to help new students find their way around campus and inform them on univeristy matters. Also, focused on promoting health and informing about the health system.
-        </p>
-        <p><br></br>RESPONSIBILITES:</p>
-        <p className="indent">
-            - helping with organizing campus events<br></br>
-            - introducing students to how university life runs<br></br>
-            - looking over an assigned group of 1st year student and helping them<br></br>
-            - explaining the German health system<br></br>
-        </p>
-    </div>
+    
     
     </>);
 }
