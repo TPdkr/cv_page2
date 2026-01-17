@@ -24,6 +24,7 @@ function SE(){
                         while providing all the necessary documentations.
                         <br></br><br></br>
                         GitHub repo also provides info on setup and file structure of this project.
+                        <br></br><br></br>
                     </p>
                     <a href="https://github.com/AnuraagDeshpande/SoftwareSuperProject_repo">GitHub repository of this project</a>
                 </ProjectDescription>

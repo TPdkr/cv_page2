@@ -56,6 +56,7 @@ function About(){
                         <br></br><br></br>
                         This page is meant to convey a pretty detailed overview of this project if you are into that.
                         So, it can be a nice read, but I tried to also include plenty of nice visuals. For more technical details repo readme file works better.
+                        <br></br><br></br>
                     </p>
                     <a href="https://github.com/TPdkr/cv_page2">GitHub repo link</a>
                 </ProjectDescription>
