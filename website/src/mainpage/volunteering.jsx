@@ -62,6 +62,7 @@ function Volunteering(){
             - explaining the German health system<br></br>
         </p>
     </div>
+    {(isSafe)? spectrum : <></>}
     {/** CROCHET CLUB */}
     <div>
         <p className="inv">CROCHET CLUB</p>
@@ -79,9 +80,6 @@ function Volunteering(){
             - promotion of events and the club on university campus<br></br>
         </p>
     </div>
-    {(isSafe)? spectrum : <></>}
-    
-    
     </>);
 }
 

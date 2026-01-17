@@ -58,6 +58,10 @@ SNAPSHOT
 THE DESCRIPTION
 ===============================================================================
 */
+.desc{
+    margin-bottom: var(--big);
+}
+
 .loc{
     margin-top: var(--medium);
 }

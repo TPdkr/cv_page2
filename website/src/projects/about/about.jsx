@@ -121,7 +121,7 @@ function About(){
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest.
                         </p>
-                        <a href="">link styling</a>
+                        <a href="https://youtu.be/QGsevnbItdU?si=KCJxuE7fQAKULDM9">link styling</a>
                     </div>
                     <div className={styles.elementsShoe}>
                         <Button>primary button type</Button>

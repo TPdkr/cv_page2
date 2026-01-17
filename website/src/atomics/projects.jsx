@@ -41,7 +41,7 @@ export function ProjectSnapshot({date, tags}){
 export function ProjectDescription({date, tags, location, grade="", children}){
     const isGrade = (grade !== "")
     return(
-    <div>
+    <div className={styles.desc}>
         <ProjectSnapshot date={date} tags={tags}/>
         <h2 className="inv">DESCRIPTION</h2>
         {children}
