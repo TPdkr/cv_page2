@@ -7,6 +7,7 @@ import os_preview from "../assets/projects/os/preview.png";
 import about_preview from "../assets/projects/about/preview.png";
 import vision_preview from "../assets/projects/vision/preview.png";
 import se_preview from "../assets/projects/se/preview.png";
+import genau_preview from "../assets/projects/genau/preview.png";
 import dbs_preview from "../assets/projects/dbs/preview.png";
 
 import { useTheme } from "../themer.jsx";
@@ -43,6 +44,16 @@ const projectsList = [
         desc: "Course group project.",
         tags: ["JS", "HTML", "CSS","SQL", "PHP"],
         type: "uni"
+    },
+    {
+        name:"genau",
+        pic: genau_preview,
+        title: "Genau! German vocabulary app",
+        year: "2025",
+        color: "Kotlin",
+        desc: "A langauge learning app for memorizing vocabulary",
+        tags: ["Kotlin"],
+        type: "personal"
     },
     {
         name:"os",
