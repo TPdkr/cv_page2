@@ -16,6 +16,7 @@ import Share from './other/share.jsx';
 import About from './projects/about/about.jsx';
 import SE from './projects/se/se.jsx';
 import DBs from './projects/dbs/dbs.jsx';
+import Genau from './projects/genau/genau.jsx';
 
 function App() {
   //theme is requested and specified at the very top component
@@ -34,6 +35,7 @@ function App() {
             <Route path="cv_page2/projects/about/" element={<About/>}></Route>
             <Route path="cv_page2/projects/se/" element={<SE/>}></Route>
             <Route path="cv_page2/projects/dbs/" element={<DBs/>}></Route>
+            <Route path="cv_page2/projects/genau/" element={<Genau/>}></Route>
             <Route path="cv_page2/error/" element={<Building/>}></Route>
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>
             <Route path="cv_page2/share/" element={<Share/>}></Route>

@@ -46,6 +46,7 @@ GENERAL STYLING
   /*purpl*/
   --SQL: var(--accent);
   --PHP: var(--accent);
+  --Kotlin: var(--accent);
   
 
   color-scheme: light dark;
