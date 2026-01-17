@@ -9,6 +9,7 @@ import vision_preview from "../assets/projects/vision/preview.png";
 import se_preview from "../assets/projects/se/preview.png";
 import genau_preview from "../assets/projects/genau/preview.png";
 import dbs_preview from "../assets/projects/dbs/preview.png";
+import jvm_preview from "../assets/projects/jvm/preview.png";
 
 import { useTheme } from "../themer.jsx";
 import sunset_d from "../assets/projects/sunset_dark.png";
@@ -51,7 +52,7 @@ const projectsList = [
         title: "Genau! German vocabulary app",
         year: "2025",
         color: "Kotlin",
-        desc: "A langauge learning app for memorizing vocabulary",
+        desc: "A langauge learning app for memorizing vocabulary.",
         tags: ["Kotlin"],
         type: "personal"
     },
@@ -71,8 +72,18 @@ const projectsList = [
         title: "Databases and web services",
         year: "2024",
         color: "PHP",
-        desc: "2nd year course group project on databases",
+        desc: "2nd year course group project on databases.",
         tags: [ "PHP","SQL","CSS","HTML","JS"],
+        type: "uni"
+    },
+    {
+        name:"jvm",
+        pic: jvm_preview,
+        title: "Development in Java virtual machine",
+        year: "2024",
+        color: "Kotlin",
+        desc: "1st year Kotlin development course assignments.",
+        tags: [ "Kotlin"],
         type: "uni"
     },
     
