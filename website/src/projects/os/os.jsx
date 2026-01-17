@@ -7,6 +7,78 @@ function OS(){
     const tags = ["C", "Makefiles"];
     const year = "2024";
 
+    const assignments = [
+        {
+            title: "Assignment 1: library, sytem calls and environment variables",
+            href: "https://github.com/TPdkr/OS-homework-1",
+            desc: 
+            (<p>
+                The assignment has 3 tasks. It focuses on understanding the basics of library and system calls as well as their error codes.
+                I was also asked to reimplement some of the functionality of env command. 
+            </p>)
+        },
+        {
+            title: "Assignment 2: executing programs with a constructed arguments list",
+            href: "https://github.com/TPdkr/OS-homework-2",
+            desc:
+            (<p>
+                The assignment has only 1 tasks. The problem asks to reimplement some functionality of the <b>xargs</b> UNIX utility.
+            </p>)
+        },
+        {
+            title:"Assignment 3: threads in C",
+            href:"https://github.com/TPdkr/OS-hw-3-threads-in-C",
+            desc:
+            (<p>
+                The single task here asks the student to implement a program that finds perfect numbers and utilize multiple threads in C for faster execution.
+            </p>)
+        },
+        {
+            title:"Assignment 4: multithreading and exclusive locks",
+            href: "https://github.com/TPdkr/OS-hw4-multithreading-and-exclusive-locks",
+            desc:
+            (<p>
+                The 100 prisoners problem is stated by Philippe Flajolet and Robert Sedgewick is the base for this problem.
+                It asks to implement it in C and provide 2 versions. One with exclusive lock for all drawers, one with separate locks for each one.
+            </p>)
+        },
+        {
+            title:"Assignment 5: multithreading and exclusive locks",
+            href:"https://github.com/TPdkr/OS-hw5-POSIX-cond-var-and-mutexes",
+            desc:
+            (<p>
+                The goal is to simulate a "vending machine" using several functions and syncgronize the parts. 
+                The solution in C using POSIX mutexes and condition variables and no other syn-chronization primitives
+            </p>)
+        },
+        {
+            title:"Assignment 8: Address spaces, paging and memory mapping",
+            href:"https://github.com/TPdkr/OS-hw8-paging-and-memory-mapping",
+            desc:
+            (<p>
+                The assignment focused on understanding paging through practice. And the coding section asked to implement standard UNIX <b>mwc</b> utility using
+                memory mapping.
+            </p>)
+        },
+        {
+            title:"Assignment 9: pipes and exec in C",
+            href:"https://github.com/TPdkr/OS-hw9-pipes-and-exec-in-C",
+            desc:
+            (<p>
+                The problem is about creating a simple quiz game. The program fetches data from an API and asks the user for answer. 
+                The parts use pipes for communication.
+            </p>)
+        },
+        {
+            title:"Assignment 10: communication with sockets",
+            href:"https://github.com/TPdkr/OS-hw10-communication-in-C-with-sockets",
+            desc:
+            (<p>
+                The task is to use IPv4 sockets to communicate and create a word guessing game with a client and a server.
+            </p>)
+        }
+    ]
+
     return (
         <>
             <SimpleHeader title="OPERATING SYSTEMS ASSIGNMENTS" src={header}/>
@@ -26,74 +98,26 @@ function OS(){
                 <div>
                     <h3 className="inv">ASSIGNMENTS</h3>
                     <div className="assignmentsGrid">
-                        <Assignment 
-                        title="Assignment 1: library, sytem calls and environment variables"
-                        repoLink="https://github.com/TPdkr/OS-homework-1">
-                            <p>
-                                The assignment has 3 tasks. It focuses on understanding the basics of library and system calls as well as their error codes.
-                                I was also asked to reimplement some of the functionality of env command. 
-                            </p>
-                        </Assignment>
-                        <Assignment 
-                        title="Assignment 2: executing programs with a constructed arguments list"
-                        repoLink="https://github.com/TPdkr/OS-homework-1">
-                            <p>
-                                The assignment has only 1 tasks. The problem asks to reimplement some functionality of the <b>xargs</b> UNIX utility.
-                            </p>
-                        </Assignment>
-                        <Assignment 
-                        title="Assignment 3: threads in C"
-                        repoLink="https://github.com/TPdkr/OS-hw-3-threads-in-C">
-                            <p>
-                                The single task here asks the student to implement a program that finds perfect numbers and utilize multiple threads in C for faster execution.
-                            </p>
-                        </Assignment>
-                        <Assignment 
-                        title="Assignment 4: multithreading and exclusive locks"
-                        repoLink="https://github.com/TPdkr/OS-hw4-multithreading-and-exclusive-locks">
-                            <p>
-                                The 100 prisoners problem is stated by Philippe Flajolet and Robert Sedgewick is the base for this problem.
-                                It asks to implement it in C and provide 2 versions. One with exclusive lock for all drawers, one with separate locks for each one.
-                            </p>
-                        </Assignment>
-                        <Assignment 
-                        title="Assignment 5: multithreading and exclusive locks"
-                        repoLink="https://github.com/TPdkr/OS-hw5-POSIX-cond-var-and-mutexes">
-                            <p>
-                                The goal is to simulate a "vending machine" using several functions and syncgronize the parts. 
-                                The solution in C using POSIX mutexes and condition variables and no other syn-chronization primitives
-                            </p>
-                        </Assignment>
-                        {/** intermission why assignments are not mentioned */}
-                        <div>
-                            
-                            <h4 className={styles.intermission}>Assignment 6-7 did not have a coding part and thus not uploaded to GitHub</h4>
-                        
-                        </div>
-                        {/** list continues */}
-                        <Assignment 
-                        title="Assignment 8: Address spaces, paging and memory mapping"
-                        repoLink="https://github.com/TPdkr/OS-hw8-paging-and-memory-mapping">
-                            <p>
-                                The assignment focused on understanding paging through practice. And the coding section asked to implement standard UNIX <b>mwc</b> utility using
-                                memory mapping.
-                            </p>
-                        </Assignment>
-                        <Assignment 
-                        title="Assignment 9: pipes and exec in C"
-                        repoLink="https://github.com/TPdkr/OS-hw9-pipes-and-exec-in-C">
-                            <p>
-                                The problem is about creating a simple quiz game. The program fetches data from an API and asks the user for answer. 
-                                The parts use pipes for communication.
-                            </p>
-                        </Assignment>
-                        <Assignment 
-                        title="Assignment 10: communication with sockets"
-                        repoLink="https://github.com/TPdkr/OS-hw10-communication-in-C-with-sockets">
-                            <p>
-                                The task is to use IPv4 sockets to communicate and create a word guessing game with a client and a server.
-                            </p>
-                        </Assignment>
+                        {
+                            assignments.map((assignment,index)=>{
+                                if (index !== 5){
+                                    //most assignments have the same structure
+                                    return <Assignment title={assignment.title} repoLink={assignment.href} key={assignment.title}>
+                                        {assignment.desc}
+                                    </Assignment>;
+                                } else {
+                                    //i need to explain the gap in assignment numbers
+                                    return <>
+                                    <div key="67">
+                                        <h4 className={styles.intermission}>Assignment 6-7 did not have a coding part and thus not uploaded to GitHub</h4>
+                                    </div>
+                                    <Assignment title={assignment.title} repoLink={assignment.href} key={assignment.title}>
+                                        {assignment.desc}
+                                    </Assignment>
+                                    </>
+                                }
+                            })
+                        }
                    </div>
                 </div>
             </div>
@@ -104,7 +128,7 @@ function OS(){
 
 function Assignment({title, repoLink, children}){
     return (
-        <div className={styles.assignment}>
+        <div className={styles.assignment} key={title}>
             <h4>
                 {title}
             </h4>
