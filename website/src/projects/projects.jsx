@@ -92,7 +92,7 @@ function Projects(){
                 <img src={sunset} className={styles.sunset}/>
                 <h2>Projects page</h2>
                 <h4 className={styles.subtitle}>
-                    This page showcases my projects, both personal and university ones. Feel free to explore and click around the page. This is meant to be something something.
+                    This page showcases my projects, both personal and university ones. Feel free to explore and click around the page.
                 </h4>
             </div>
             {/** this is the list of projects */}

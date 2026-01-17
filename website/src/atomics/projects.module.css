@@ -21,7 +21,7 @@ HEADER
     position: absolute;
     top: var(--medium);
     left: var(--medium);
-    max-width: 30rem;
+    max-width: 32rem;
 }
 
 @media (max-width: 37rem){

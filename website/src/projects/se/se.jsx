@@ -11,7 +11,7 @@ function SE(){
 
     return (
         <>
-            <SimpleHeader src={header} title="Software engineering"></SimpleHeader>
+            <SimpleHeader src={header} title="SOFTWARE ENGINEERING"></SimpleHeader>
             <div className="contentBox">
                 {/** header section */}
                 <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade="88% (1.67)">

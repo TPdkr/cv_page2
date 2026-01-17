@@ -9,7 +9,7 @@ function DBs(){
     const tags=[ "PHP","SQL","CSS","HTML","JS"];
 
     return(<>
-        <SimpleHeader src={header} title="Databases and web services"></SimpleHeader>
+        <SimpleHeader src={header} title="DATABASES AND WEB SERVICES"></SimpleHeader>
         <div className="contentBox">
             <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade="95% (1.00)">
                 <p>
