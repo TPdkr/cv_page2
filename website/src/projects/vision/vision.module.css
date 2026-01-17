@@ -1,34 +1,3 @@
-.content{
-    display: flex;
-    flex-direction: column;
-    padding: var(--medium);
-    gap: var(--giant);
-    padding-bottom: var(--giant);
-}
-
-.loc{
-    margin-top: var(--medium);
-}
-
-.assignments{
-    display: grid;   
-    gap: var(--medium);
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: var(--medium);
-}
-
-@media (max-width: 64rem){
-    .assignments{
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 37rem){
-    .assignments{
-        grid-template-columns: 1fr;
-    }
-}
-
 .assignment{
     max-width: 40rem;
 }

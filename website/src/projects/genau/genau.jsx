@@ -20,7 +20,7 @@ function Genau(){
                         <br></br>
                         I set out to create a simple way to memorize German vocabulary at the beginning of 2025. I created
                         a simple Adroid app with <b>Kotlin and SQLlite</b> to challange myself and learn words in a nicer way.
-                        <br></br>
+                        <br></br><br></br>
                         <b>Android studio</b> was my work environment and GitHub for version control. Some things
                         I learned as I went using official Android courses.
                     </p>
@@ -37,7 +37,7 @@ function Genau(){
                     <p className="indent">
                         * organize german vocabulary into courses and units<br></br>
                         * tailor experience to the German language with explicit article buttons<br></br>
-                        * autocomplete translate<br></br>
+                        * auto translate<br></br>
                         * have that spark of slighlty teasing the user<br></br>
                         * remind me to memorize words after time passes<br></br>
                     </p>

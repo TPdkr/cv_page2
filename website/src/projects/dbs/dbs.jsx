@@ -21,7 +21,7 @@ function DBs(){
                     This was conducted based on sequentially completing assignments each asking for a new 
                     part of the website or databse to be added. The final product received a good grade, but 
                     I would not call a fully fledged product. However, this was also an educational course
-                    aimed at teaching about databases.
+                    aimed at teaching about databases and for that it was sufficient.
                 </p>
             </ProjectDescription>
             <div className="textBox">

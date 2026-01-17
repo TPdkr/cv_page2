@@ -39,7 +39,7 @@ function Vision(){
     ]
     return (<>
         <SimpleHeader title="COMPUTER VISION COURSE" src={header}/>
-        <div className={styles.content}>
+        <div className="contentBox">
             {/** this is the header, the goal is to contain all crucial info kind of like an abstract */}
             <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
                 <p>
@@ -55,7 +55,7 @@ function Vision(){
             {/** these are the assignments */}
             <div>
                 <h3 className="inv">ASSIGNMENTS</h3>
-                <div className={styles.assignments}>
+                <div className="assignmentsGrid">
                     {assignmentsList.map((assignment)=><Assignment title={assignment.title} desc={assignment.desc}/>)}
                 </div>
             </div>
@@ -72,7 +72,7 @@ function Assignment({title, desc}){
                 {title}
             </h4>
             <p className="inv">ABOUT:</p>
-            <p>{desc}</p>
+            <p><br></br>{desc}</p>
         </div>
     );
 }

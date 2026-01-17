@@ -153,6 +153,10 @@ COMMON CLASSES
 ===============================================================================
 */
 
+/*
+TEXT
+small text styling
+*/
 .inv{
   color: var(--background);
   background-color: var(--onBackground);
@@ -164,8 +168,11 @@ COMMON CLASSES
 }
 
 /*
+COMPLEX CLASSES
+
 these classes allow to scaffold a project page quicker
-and have common styling for the format.
+and have common styling for the format. Yet not complex
+enough to be a component in react.
 */
 .contentBox{
   display: flex;
@@ -181,6 +188,26 @@ and have common styling for the format.
   max-width: 80rem;
   width: 100%;
 }
+
+.assignmentsGrid{
+  display: grid;   
+  gap: var(--medium);
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: var(--medium);
+}
+
+@media (max-width: 64rem){
+  .assignmentsGrid{
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 37rem){
+  .assignmentsGrid{
+      grid-template-columns: 1fr;
+  }
+}
+
 /*
 ===============================================================================
 FONT SIZES MOBILE
