@@ -31,7 +31,9 @@ function App() {
       <BrowserRouter>
         <Navbar/>
           <Routes>
+            {/** main page */}
             <Route path="cv_page2/" element={<MainPage/>}></Route>
+            {/** list of projects and their catalouge*/}
             <Route path="cv_page2/projects/" element={<Projects/>}></Route>
             <Route path="cv_page2/projects/about/" element={<About/>}></Route>
             <Route path="cv_page2/projects/vision/" element={<Vision/>}></Route>
@@ -42,9 +44,10 @@ function App() {
             <Route path="cv_page2/projects/jvm/" element={<JVM/>}></Route>
             <Route path="cv_page2/projects/ads/" element={<ADS/>}></Route>
             <Route path="cv_page2/projects/cc/" element={<CCpp/>}></Route>
-            <Route path="cv_page2/error/" element={<Building/>}></Route>
+            {/** other pages */}
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>
             <Route path="cv_page2/share/" element={<Share/>}></Route>
+            <Route path="*" element={<Building/>}></Route>
           </Routes>
       </BrowserRouter>
     </div>
