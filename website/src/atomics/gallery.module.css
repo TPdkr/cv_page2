@@ -40,14 +40,14 @@ POP UP CONTENTS
 }
 
 .popUpContent{
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     gap: var(--small);
 }
 
 .popUpDesc{
-    width: 0;
-    min-width: 100%;  /* Matches image width perfectly */
     margin: 0;  /* Remove default p margins */
     word-wrap: break-word;
     color: var(--background);
