@@ -5,6 +5,7 @@ import { ProjectDescription, SimpleHeader } from "../../atomics/projects";
 function JVM(){
     const date="2024";
     const tags =["Kotlin"];
+    const grade="92% (1.33)";
 
     const assignments = [
         {
@@ -37,7 +38,7 @@ function JVM(){
         <>
             <SimpleHeader src={header} title="DEVELOPMENT IN JAVA VIRTUAL MACHINE"></SimpleHeader>
             <div className="contentBox">
-                <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
+                <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade={grade}>
                     <p><br></br>
                         This is a development in <b>Kotlin</b> course that taught the inner working of the Java virtual machine 
                         as well as coding in the language. It consisted of many assignments listed below. 

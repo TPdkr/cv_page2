@@ -8,13 +8,14 @@ function SE(){
     //this is description info
     const date="2025";
     const tags=["JS", "HTML", "CSS","SQL", "PHP"];
+    const grade="89% (1.33)";
 
     return (
         <>
             <SimpleHeader src={header} title="SOFTWARE ENGINEERING"></SimpleHeader>
             <div className="contentBox">
                 {/** header section */}
-                <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade="88% (1.67)">
+                <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade={grade}>
                     <p><br></br>
                         This was a group project complted in a group of 11 people over the span of 3 submissions that focused on learning how to 
                         engineer software and what project management is. It asked us to write <b>UML, system architecture, specification</b> and more

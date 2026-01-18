@@ -7,11 +7,12 @@ import { ProjectDescription, SimpleHeader } from "../../atomics/projects";
 function DBs(){
     const date="2024";
     const tags=[ "PHP","SQL","CSS","HTML","JS"];
+    const grade = "97% (1.00)";
 
     return(<>
         <SimpleHeader src={header} title="DATABASES AND WEB SERVICES"></SimpleHeader>
         <div className="contentBox">
-            <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade="95% (1.00)">
+            <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade={grade}>
                 <p>
                     <br></br>
                     A group project for a university course aimed at producing a simple food rating website.

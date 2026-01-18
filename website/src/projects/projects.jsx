@@ -136,7 +136,8 @@ function Projects(){
                 <img src={sunset} className={styles.sunset}/>
                 <h2>Projects page</h2>
                 <h4 className={styles.subtitle}>
-                    This page showcases my projects, both personal and university ones. Feel free to explore and click around the page.
+                    This page showcases my projects, both personal and university ones. Feel free to explore and click around the page. University
+                    course grade specified is the overall course grade.
                 </h4>
             </div>
             {/** this is the list of projects */}

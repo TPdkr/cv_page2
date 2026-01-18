@@ -8,12 +8,13 @@ function CCpp(){
     const tags=["Cpp","C","Makefiles"];
     const location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN";
     const title="PROGRAMMING IN C AND C++";
+    const grade="96% (1.00)";
 
     return (
         <>
             <SimpleHeader src={header} title={title}></SimpleHeader>
             <div className="contentBox">
-                <ProjectDescription date={date} tags={tags} location={location}>
+                <ProjectDescription date={date} tags={tags} location={location} grade={grade}>
                     <p><br></br>
                         Introductory course on programming in <b>C, C++ and using Makefiles</b>. It had weekly assignments, which contributed to 33% 
                         of the grade for the course. The course covered all essential parts of both languages and some algorithms to make use of them.

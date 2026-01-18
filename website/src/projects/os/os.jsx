@@ -6,6 +6,7 @@ import { SimpleHeader, ProjectDescription } from "../../atomics/projects.jsx";
 function OS(){
     const tags = ["C", "Makefiles"];
     const year = "2024";
+    const grade = "100% (1.00)";
 
     const assignments = [
         {
@@ -83,7 +84,7 @@ function OS(){
         <>
             <SimpleHeader title="OPERATING SYSTEMS ASSIGNMENTS" src={header}/>
             <div className="contentBox">
-                <ProjectDescription tags={tags} date={year} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
+                <ProjectDescription tags={tags} date={year} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade={grade}>
                     <p>
                     <br></br>
                     In my second year at Constructor University I completed the Operating systems course, that included many assignments.

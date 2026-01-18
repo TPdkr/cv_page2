@@ -5,6 +5,7 @@ import styles from "./vision.module.css";
 function Vision(){
     const tags = ["Python", "Jupyter_notebooks"];
     const date ="2025";
+    const grade="96% (1.00)";
 
     const assignmentsList = [
         {
@@ -41,7 +42,7 @@ function Vision(){
         <SimpleHeader title="COMPUTER VISION COURSE" src={header}/>
         <div className="contentBox">
             {/** this is the header, the goal is to contain all crucial info kind of like an abstract */}
-            <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN">
+            <ProjectDescription date={date} tags={tags} location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN" grade={grade}>
                 <p>
                     <br></br>
                     This course explored the basics of computer vision and image processing. The assignments matched the lectures and asked us to 

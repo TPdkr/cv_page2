@@ -8,12 +8,13 @@ function ADS(){
     const tags=["Cpp","C","Makefiles", "Python"];
     const location="COMPLETED AT CONSTRUCTOR UNIVERISTY BREMEN";
     const title="ALGORITHMS AND DATA STRUCTURES";
+    const grade="100% (1.00)";
 
     return (
         <>
             <SimpleHeader src={header} title={title}></SimpleHeader>
             <div className="contentBox">
-                <ProjectDescription date={date} tags={tags} location={location}>
+                <ProjectDescription date={date} tags={tags} location={location} grade={grade}>
                     <p>
                         <br></br>
                         This was a 1st year couse that taught essential algorithms such as ones related to <b>sorting and binary trees</b>. It had 
