@@ -22,17 +22,19 @@ export function ProjectSnapshot({date, tags}){
         <div className={styles.projectSnapshot}>
             <h4 className="inv">{date}</h4>
             <div className={styles.snapTags}>
-                {tags.map((tag)=>
-                <h4 
+                {tags.map((tag)=>{
+                const name = (tag!=="Cpp")? tag: "C++";
+
+                return <h4 
                 className={styles.tag} 
                 key={tag}
                 style={{
                     backgroundColor: `var(--${tag})`
                 }}
                 >
-                {tag}
+                    {name}
                 </h4>
-            )}
+                })}
             </div>
         </div>
     );

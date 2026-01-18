@@ -10,6 +10,8 @@ import se_preview from "../assets/projects/se/preview.png";
 import genau_preview from "../assets/projects/genau/preview.png";
 import dbs_preview from "../assets/projects/dbs/preview.png";
 import jvm_preview from "../assets/projects/jvm/preview.png";
+import ads_preview from "../assets/projects/ads/preview.png";
+import cc_preview from "../assets/projects/cc/preview.png";
 
 import { useTheme } from "../themer.jsx";
 import sunset_d from "../assets/projects/sunset_dark.png";
@@ -84,6 +86,26 @@ const projectsList = [
         color: "Kotlin",
         desc: "1st year Kotlin development course assignments.",
         tags: [ "Kotlin"],
+        type: "uni"
+    },
+    {
+        name:"ads",
+        pic: ads_preview,
+        title: "Algorithms and data structures",
+        year: "2024",
+        color: "Cpp",
+        desc: "University course assignments.",
+        tags: ["C++","C", "Makefiles"],
+        type: "uni"
+    },
+    {
+        name:"cc",
+        pic: cc_preview,
+        title: "Programming in C and C++",
+        year: "2023",
+        color: "Cpp",
+        desc: "Course assignments grouped into a repo.",
+        tags: ["C++","C", "Makefiles"],
         type: "uni"
     },
     

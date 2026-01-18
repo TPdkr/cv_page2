@@ -32,6 +32,7 @@ GENERAL STYLING
   /** exact specifications*/
   /*dark blue*/
   --C: var(--straightBlue);
+  --Cpp: var(--straightBlue);
   --CSS: var(--straightBlue);
   --vite: var(--straightBlue);
   /*light blue*/
