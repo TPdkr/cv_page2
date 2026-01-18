@@ -13,8 +13,6 @@ async function checkCountry(){
         const data = await response.json();
         const country = data.country;
 
-        console.log("data fetched successfully");
-
         console.log(country);
         //results are checked
         const banned = ["RU", "BY"];
@@ -33,7 +31,7 @@ export const MyContextProvider = ({ children }) => {
         if (isSafe === "not set"){
             checkCountry().then((safety)=>{
                 if(!safety){
-                    console.log("you are banned sucker");
+                    console.log("you are banned sucker uwu");
                 }
                 setSafeState(safety)
             });

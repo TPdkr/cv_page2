@@ -5,12 +5,6 @@ import { getCheck } from "../navbar/check.jsx";
 
 function Volunteering(){
     const {isSafe} = getCheck();
-    
-    if(isSafe){
-        console.log("you are in safery");
-    } else {
-        console.log("you are not in safety");
-    }
 
     const spectrum = (
         <>

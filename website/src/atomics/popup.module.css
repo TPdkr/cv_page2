@@ -1,0 +1,52 @@
+/* 
+===============================================================================
+POP UP
+===============================================================================
+*/
+.popUpBack{
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--concealer);
+}
+
+.popUpWindow{
+    position: relative;
+    background-color: var(--onBackground);
+    color: var(--background);
+    padding: var(--medium);
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
+    min-height: 10rem;
+}
+
+@media (max-width: 37rem){
+    .popUpBack{
+        z-index: 50;
+    }
+
+    .popUpWindow{
+        position: fixed;
+        left:0;
+        right:0;
+        max-width: none;
+        padding-top: 2rem;
+        z-index: 1;
+    }
+}
+
+.closePopUp{
+    position: absolute;
+    cursor: pointer;
+    top:var(--medium);
+    right:var(--medium);
+    max-width: 2rem;
+}
+
+.closed{
+    display: none;
+}

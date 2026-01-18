@@ -1,16 +1,9 @@
-import { useState } from "react";
 import Button from "../atomics/button";
 import {Cell, FilledCell} from "../atomics/grid";
 import Separator from "../atomics/separator";
 import styles from "./contacts.module.css";
 import { useNavigate } from 'react-router-dom';
-import cross_l from "../assets/cross_light.svg";
-import cross_d from "../assets/cross_dark.svg";
-
-import { useTheme } from "../themer.jsx";
-
-
-
+import { PopUp, usePopUp } from "../atomics/popup.jsx";
 import { getCheck } from "../navbar/check.jsx";
 
 function Contacts(){
@@ -35,7 +28,6 @@ function Contacts(){
 
     const toCV = ()=>{
         const link = document.createElement('a');
-        console.log("clicking cv link");
         const cv1 = "/cv_page2/assets/me.png";
         const cv2 = "/cv_page2/assets/frog.gif";
         link.href = isSafe ? cv1 : cv2;
@@ -98,6 +90,7 @@ function Contacts(){
 
 export default Contacts
 
+/*
 function usePopUp() {
     const [isOpen, setOpen] = useState(false);
     const close = () => setOpen(false);
@@ -117,4 +110,4 @@ function PopUp({isOpen, close, children}){
             {children}
         </div>
     </div>);
-}
+}*/
