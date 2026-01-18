@@ -20,7 +20,7 @@ function CCpp(){
                         Also, all assignments are grouped into a repository linked below.
                         <br></br><br></br>
                     </p>
-                    <a>GitHub repository with assignments</a>
+                    <a href="https://github.com/TPdkr/Programming-in-C-and-C-">GitHub repository with assignments</a>
                 </ProjectDescription>
             </div>
         </>

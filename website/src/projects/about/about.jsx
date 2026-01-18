@@ -51,10 +51,10 @@ function About(){
                 <ProjectDescription date={date} tags={tags} location="PERSONAL PROJECT">
                     <p>
                         <br></br>
-                        This is my perosnal website aiming to make it easier to share contacts, showcase my projects and link my digital presence together.
+                        <b>You are currently on this site.</b> It is my perosnal website aiming to make it easier to <b>share contacts, showcase my projects and link my digital presence together.</b>
                         It is meant to contain all info you can also find in my CV and more. This is due to the fact that CVs have very limited space.
                         <br></br><br></br>
-                        This page is meant to convey a pretty detailed overview of this project if you are into that. More on the design side.
+                        This page is meant to convey a pretty detailed overview of this project's design if you are into that.
                         So, it can be a nice read, but I tried to also include plenty of nice visuals. For more technical details repo readme file works better.
                         <br></br><br></br>
                         I attempted doing a similar thing before. This is a refinement on that idea.
