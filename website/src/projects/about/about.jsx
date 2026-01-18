@@ -9,6 +9,7 @@ import ref1 from "../../assets/projects/about/ref1.jpeg"
 import ref2 from "../../assets/projects/about/ref2.jpeg"
 import ref3 from "../../assets/projects/about/ref3.jpeg"
 import ref4 from "../../assets/projects/about/ref4.jpg"
+import ref5 from "../../assets/projects/about/ref5.jpg"
 
 //projects elements
 import { SimpleHeader, ProjectDescription } from "../../atomics/projects.jsx";
@@ -28,19 +29,21 @@ function About(){
     const references =[
         {
             src: ref1,
-            desc: (<p>this is a references</p>)
+            desc: "This served as a main reference for project header components."
         },
         {
             src: ref2,
-            desc: (<p>this is a reference with a longer description that lasts multiple lines</p>)
         },
         {
             src: ref3,
-            desc: (<p>this is a pic</p>)
+            desc: "I liked the styling here, the button and the way 404 is displayed."
         },
         {
             src: ref4,
-            desc: (<p>this is a picture</p>)
+            desc: "The way table and graps work here is nice."
+        },
+        {
+            src: ref5,
         }
     ]
 
@@ -108,6 +111,10 @@ function About(){
                     <img src={circuit} className={styles.circuit}></img>
                 </div>
                 {/** gallery is presented here */}
+                <div className={styles.gallery}>
+                    <h3>VISUAL STYLE REFERENCES</h3>
+                    <a href="https://pin.it/1hhKq66xo">My pinterest board for this project</a>
+                </div>
                 <Gallery pictures={references}/>
                 {/** this is the elements used part */}
                 <Separator simb="-"></Separator>

@@ -1,3 +1,9 @@
+/* 
+===============================================================================
+MAIN STYLING ELEMENTS
+===============================================================================
+*/
+
 .gallery{
     /*general styling*/
     border: 2px solid var(--onBackground);
@@ -19,4 +25,30 @@
     max-height: 17rem;
     max-width: 30rem;
     object-fit: cover;
+    cursor: pointer;
+}
+
+/* 
+===============================================================================
+POP UP CONTENTS
+===============================================================================
+*/
+.popUpPic{
+    margin-top: 3rem;
+    padding: 0;
+    max-width: min(100%,40rem);
+}
+
+.popUpContent{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--small);
+}
+
+.popUpDesc{
+    width: 0;
+    min-width: 100%;  /* Matches image width perfectly */
+    margin: 0;  /* Remove default p margins */
+    word-wrap: break-word;
+    color: var(--background);
 }

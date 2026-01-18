@@ -30,6 +30,11 @@
     width: 100%;
 }
 
+.gallery{
+    display: grid;
+    gap: var(--small);
+}
+
 @media (max-width: 37rem){
     .goals, .elements{
         grid-template-columns: 1fr;
