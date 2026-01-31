@@ -133,4 +133,18 @@ This is the overall file structure of the repository:
 6 directories, 41 files
 ```
 
-# Set up
+# Set up a local instance
+First clone the repository in whatever way you want. Make sure that the node package manager is installed on your system. 
+Then go to ```./website``` folder. It contains all actuall react code and where npm commands need to be used.
+
+Then install all necessary libraries for the project with command below.
+
+```
+npm install
+```
+
+Now run the command below to run the website locally. Follow the localhost link that pops up to open the website in your browser of choice.
+
+```
+npm run dev
+```
