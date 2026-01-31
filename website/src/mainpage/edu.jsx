@@ -33,7 +33,7 @@ function Edu(){
                     You can find my transcript below.
                     <br></br><br></br>
                 </p>
-                <a>transcript</a>
+                <a href="/cv_page2/assets/Transcript_CU.pdf">transcript</a>
                 {/** grid with the grades */}
                 <Grid className={styles.uniGrades}>
                     <Cell><p><b>(90%, 1.33)</b> Software engineering</p></Cell>
