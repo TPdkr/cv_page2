@@ -6,17 +6,17 @@
     padding: var(--small);
     background-color: var(--background);
     color: var(--onBackground);
-    border: 2px solid var(--onBackground);
+    border: 2px solid var(--secondary);
 }
 
 .filledCell{
     padding: var(--small);
-    background-color: var(--onBackground);
+    background-color: var(--secondary);
     color: var(--background);
-    border: 2px solid var(--onBackground);
+    border: 2px solid var(--secondary);
 }
 
 .filledCell p, .filledCell p b{
-    background-color: var(--onBackground);
+    background-color: var(--secondary);
     color: var(--background)
 }
