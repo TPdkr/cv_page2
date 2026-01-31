@@ -28,8 +28,8 @@ function Contacts(){
 
     const toCV = ()=>{
         const link = document.createElement('a');
-        const cv1 = "/cv_page2/assets/me.png";
-        const cv2 = "/cv_page2/assets/frog.gif";
+        const cv1 = "/cv_page2/assets/CV8.pdf";
+        const cv2 = "/cv_page2/assets/CV81.pdf";
         link.href = isSafe ? cv1 : cv2;
         //link.download = `${isSafe ? 'frog' : 'glitch'}.gif`;
         link.click();

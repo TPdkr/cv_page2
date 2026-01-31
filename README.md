@@ -56,6 +56,8 @@ tree -L 3 --gitignore
 This is the overall file structure of the repository:
 ```
 .
+├── filters.md
+├── project.md
 ├── README.md
 └── website
     ├── eslint.config.js
@@ -63,7 +65,7 @@ This is the overall file structure of the repository:
     ├── package.json
     ├── package-lock.json
     ├── public
-    │   └── vite.svg
+    │   └── assets
     ├── README.md
     ├── src
     │   ├── App.css
@@ -74,8 +76,13 @@ This is the overall file structure of the repository:
     │   ├── index.css
     │   ├── main.jsx
     │   ├── mainpage
-    │   └── navbar
+    │   ├── navbar
+    │   ├── other
+    │   ├── projects
+    │   └── themer.jsx
     └── vite.config.js
+
+12 directories, 14 files
 ```
 
 # Set up a local instance
