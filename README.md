@@ -11,16 +11,21 @@ New personal website repository. Now with better design and react! Currently in 
 Current version: 2.0 
 
 - 2.1: planned search and filter for projects, refinements on content
-- 2.0: early development of the website
+- 2.0: early development of the website <-current
 - 1.0: first personal website, stored in a different repo, never finished
 
 # Project progress
-Not all pages/parts are working yet
+
+## Version 2.1
+Coming soon
+
+## Version 2.0
+All essential functionality is active
 - main page ✅
 - error page ✅
 - theming ✅
 - navigation bar ✅
-- cv link, transcript ❌ (waiting for updates for the cv and transcript to add data)
+- cv link, transcript, language certificate ✅
 - share page ✅
 - projects catalouge ✅
 - individual project pages ✅
