@@ -2,6 +2,14 @@
 ===============================================================================
 GENERAL STYLING
 ===============================================================================
+
+Breaking points:
+
+mobile: 37rem and lower
+tablet: below 64rem
+desktop: higher
+
+these vary based on context but generally stay the same as this ensures consistency
 */
 
 :root {
