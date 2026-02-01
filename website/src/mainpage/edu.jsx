@@ -36,12 +36,14 @@ function Edu(){
                 <a href="/cv_page2/assets/Transcript_CU.pdf">transcript</a>
                 {/** grid with the grades */}
                 <Grid className={styles.uniGrades}>
-                    <Cell><p><b>(90%, 1.33)</b> Software engineering</p></Cell>
+                    <Cell><p><b>(100%, 1.00)</b> Human computer interaction</p></Cell>
                     <FilledCell className={styles.uniGradesTitle}><p>
                         Course work;<br></br>
                         GPA: 1.3
                         Credits: 175
                     </p></FilledCell>
+                    <Cell><p><b>(96%, 1.00)</b> Computer vision</p></Cell>
+                    <Cell><p><b>(90%, 1.33)</b> Software engineering</p></Cell>
                     <Cell><p><b>(100%, 1.00)</b> Operating systems</p></Cell>
                     <Cell><p><b>(97%, 1.00)</b> Databases and web services</p></Cell>
                     <Cell><p><b>(100%, 1.00)</b> Algorithms and data structures</p></Cell>
