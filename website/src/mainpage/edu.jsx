@@ -64,9 +64,9 @@ function Edu(){
                         <h4>---2020-2023</h4>
                         <p>
                             I studied in a specialized class with <b>strong focus on IT, Mathematics and Physics.</b><br></br><br></br>
-                            The diploma I received had all grades at <b>100%</b> and I received a gold medal for my academic achievements.
+                            The diploma I received had all grades at <b>100%</b> and I got a gold medal for my academic achievements.
                             The curriculum was challenging, but It laid the strong foundations for my degree.<br></br><br></br>
-                            Here I started learning such languages such as <b>C++ and python</b>, which helped me while starting my Bachelor's.
+                            Here I started learning such languages such as <b>C++ and Python</b>, which helped me while starting my Bachelor's.
                         </p>
 
                         <Grid className={styles.schoolGpa}>

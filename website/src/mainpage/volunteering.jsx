@@ -16,7 +16,7 @@ function Volunteering(){
                     2023-2026<br></br><br></br>
 
                     Participated in a queer straight alliance organization. Helped organize club and campus wide events and support the local community.
-                    Some of our events had up to 100 attendees and significant success with univeristy comunity.
+                    Some of our events had up to 100 attendees and significant success with univeristy community.
                 </p>
                 <p><br></br>RESPONSIBILITES:</p>
                 <p className="indent">
@@ -65,6 +65,7 @@ function Volunteering(){
             2023-ONGOING<br></br><br></br>
 
             Organized events and onboarded people to the art and craft of crochet. Managed club finances.
+            Participated in campus wide events such as a charity winter market and an art exhibit
         </p>
         <p><br></br>RESPONSIBILITES:</p>
         <p className="indent">

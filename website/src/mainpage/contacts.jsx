@@ -42,7 +42,7 @@ function Contacts(){
                 <div className={styles.buttonRow}>
                     <Button onClick={open}>Contacts</Button>
                     <p>
-                        Find my emial, GitHub and CV. Best way to reach out to me is via email. I respond withing 1-3 working days.
+                        Find my email, GitHub and CV. Best way to reach out to me is via email. I respond withing 1-3 working days.
                     </p>
                 </div>
                 {/** this is the projects/skills shortlist */}
@@ -68,7 +68,7 @@ function Contacts(){
                     My contacts
                 </h2>
                 <p className={styles.popUpDesc}>
-                    Find my emial, GitHub and CV. Best way to reach out to me is via email. I respond withing 1-3 working days.
+                    Find my email, GitHub and CV. Best way to reach out to me is via email. I respond withing 1-3 working days.
                 </p>
                 <div className={styles.popUpLinks}>
                     <Button type="bright" onClick={toGit}>

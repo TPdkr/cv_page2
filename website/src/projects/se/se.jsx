@@ -8,7 +8,7 @@ function SE(){
     //this is description info
     const date="2025";
     const tags=["JS", "HTML", "CSS","SQL", "PHP"];
-    const grade="89% (1.33)";
+    const grade="90% (1.33)";
 
     return (
         <>

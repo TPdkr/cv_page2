@@ -31,6 +31,8 @@ All essential functionality is active
 - individual project pages ✅
 
 # Project details
+These can be found on the about page of the project itself. But also at the following file [project.md](./project.md)
+
 ## Langauges, frameworks and tools
 Mainly implemented everything using react, GitHub pages for hosting and  with GitHub for version control.
 
@@ -48,8 +50,10 @@ Mainly implemented everything using react, GitHub pages for hosting and  with Gi
 - [feather icons](https://feathericons.com/)
 - [ip api](https://api.country.is/)
 
-# Project workflow and details
-These can be found on the about page of the project itself. But also at the following file [project.md](./project.md)
+## doc md files in the repo
+- [project.md](./project.md)
+- [filters.md](./filters.md)
+
 # Repository
 ## File structure
 Results were achieved by running the command below in the main directory of the repository.
