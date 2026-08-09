@@ -12,7 +12,7 @@ function Zmt(){
                 <div className={styles.content}>
                     <h2>WORKING STUDENT IN MACHINE LEARNING WITH MARINE DATA</h2>
                     <div>
-                        <h3>DEC 2025 - PRESENT</h3>
+                        <h3>DEC 2025 - MAR 2026</h3>
                         <h4>
                             At leibnitz insititute for marine research
                         </h4>
@@ -28,7 +28,7 @@ function Zmt(){
             </div>
             <div>
                 <h2>INTERNSHIP</h2>
-                <h3 className={styles.suptitle}>JUNE 2025 - SEPTEMBER 2025</h3>
+                <h3 className={styles.suptitle}>JUN 2025 - SEP 2025</h3>
                 <h4>
                     At leibnitz insititute for marine research
                 </h4>

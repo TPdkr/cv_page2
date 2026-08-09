@@ -22,7 +22,7 @@ function Edu(){
                 </div>
                 <img src={uni} className={styles.uniPic}/>
                 {/** text contents */}
-                <h4>---2023-PRESENT</h4>
+                <h4>---2023-2026</h4>
                 <p className={styles.uniDesc}>
                     During my studies here I advanced <b>my technical and soft skills</b>. I actively participated in campus life and in classes.
                     I learned essential knowledge in the field of computer science and <b>completed many group projects</b> during my studies.
@@ -30,17 +30,28 @@ function Edu(){
                     I <b>volunteered as a peer mentor for 2 years as well as lead student clubs on campus</b>, which made me better at clear communication,
                     scheduling my time and managing responsibilities.
                     <br></br><br></br>
+
+                    <b>Thesis topic: object specific distance estimation techniques for autonomous driving (FINAL GRADE:92%)</b>
+                    <br></br><br></br>
                     You can find my transcript below.
                     <br></br><br></br>
                 </p>
-                <a href="/cv_page2/assets/Transcript_CU.pdf">transcript</a>
+                <div className={styles.uniLinks}>
+                    <a href="/cv_page2/assets/Transcript_CU.pdf" target="_blank" rel="noopener noreferrer">
+                        transcript
+                    </a>
+                    <a href="/cv_page2/assets/BSC_diploma_full.pdf" target="_blank" rel="noopener noreferrer">
+                        diploma and supplement
+                    </a>
+                </div>
+                
                 {/** grid with the grades */}
                 <Grid className={styles.uniGrades}>
                     <Cell><p><b>(100%, 1.00)</b> Human computer interaction</p></Cell>
                     <FilledCell className={styles.uniGradesTitle}><p>
                         Course work;<br></br>
-                        GPA: 1.3
-                        Credits: 175
+                        GPA: 1.21
+                        Credits: 210
                     </p></FilledCell>
                     <Cell><p><b>(96%, 1.00)</b> Computer vision</p></Cell>
                     <Cell><p><b>(90%, 1.33)</b> Software engineering</p></Cell>

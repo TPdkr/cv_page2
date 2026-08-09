@@ -52,7 +52,9 @@ function Contacts(){
                         C/C++ | Kotlin | HTML | JS | React | Python | CSS | PHP | Haskell | git | Linux  | GitHub | LateX
                     </p>
                 </div>
-                <a href="/cv_page2/assets/A2.pdf">German language certificate</a>
+                <a href="/cv_page2/assets/B1.pdf" target="_blank" rel="noopener noreferrer">
+                    German language certificate (B1)
+                </a>
                 {/** this is the languages table */}
                 <div className={styles.grid}>
                     <FilledCell><h4>Languages.txt</h4></FilledCell>
