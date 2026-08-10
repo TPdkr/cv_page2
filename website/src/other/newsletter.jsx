@@ -5,12 +5,27 @@ import Separator from "../atomics/separator";
 import email_pic from "../assets/letter/email.png";
 
 import { useState } from "react";
+import fm from 'front-matter';
 import {Folder} from "../atomics/folder.jsx";
 
 const BUTTONDOWN_USERNAME = "TPdkr";
 
 function Newsletter(){
 const [isFolderOpen, setIsFolderOpen] = useState(false);
+
+//paths are loaded into the thing
+const emails = import.meta.glob('../content/newsletters/*.md', {
+	eager: true,   // resolve immediately at build time, not as async imports
+	query: '?raw', // import as raw string content, not as a parsed JS module
+	import: 'default',
+});
+
+//here the contents are parsed into text
+const emails_data = Object.entries(emails).map(([path, content]) => {
+	const { attributes, body } = fm(content);
+	return { attributes, body };
+});
+
 
 const isOpen = (isFolderOpen)? styles.open : styles.closed;
 
@@ -38,12 +53,11 @@ const isOpen = (isFolderOpen)? styles.open : styles.closed;
 				<h3>Newsletter Archive</h3>
 				<p>Check out my previous newsletters below.</p>
 				<div className={styles.folders}>
-					<Folder folderName="2024">
-						Something something 
-					</Folder>
-					<Folder folderName="2023" stagger={1}>
-						something something something
-					</Folder>
+					{emails_data.map(({ attributes, body }, index) => (
+						<Folder key={index} folderName={attributes.title} stagger={index}>
+							{body}
+						</Folder>
+					))}
 				</div>
 			</div>
 		</div>
