@@ -104,6 +104,7 @@ these vary based on context but generally stay the same as this ensures consiste
   margin: 0;
   padding: 0;
   font-size: 1rem;
+  box-sizing: border-box;
 }
 
 a {
@@ -116,6 +117,11 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+}
+
+img {
+	max-width: 100%;
+	display: block;
 }
 
 /*
