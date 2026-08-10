@@ -1,0 +1,39 @@
+.Newsletter{
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    gap: var(--giant);
+    display: grid;
+}
+
+.header{
+	padding-top: var(--big);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: var(--small);
+}
+
+.form{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: var(--small);
+}
+
+@media (max-width: 37rem){
+	.form{
+		flex-direction: column;
+	}
+}
+
+.from input{
+	height: 100%;
+}
+
+.archive{
+	display: grid;
+	overflow: hidden;
+    gap: var(--medium);
+	width: 100%;
+}

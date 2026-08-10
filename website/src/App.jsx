@@ -20,6 +20,7 @@ import Genau from './projects/genau/genau.jsx';
 import JVM from './projects/jvm/jvm.jsx';
 import ADS from './projects/ads/ads.jsx';
 import CCpp from './projects/cc/cc.jsx';
+import Newsletter from './other/newsletter.jsx';
 
 function App() {
   //theme is requested and specified at the very top component
@@ -45,6 +46,7 @@ function App() {
             <Route path="cv_page2/projects/ads/" element={<ADS/>}></Route>
             <Route path="cv_page2/projects/cc/" element={<CCpp/>}></Route>
             {/** other pages */}
+            <Route path="cv_page2/newsletter/" element={<Newsletter/>}></Route>
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>
             <Route path="cv_page2/share/" element={<Share/>}></Route>
             <Route path="*" element={<Building/>}></Route>

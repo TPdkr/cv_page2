@@ -205,6 +205,21 @@ enough to be a component in react.
   margin-top: var(--medium);
 }
 
+ input[type=text], input[type=email],
+ input[type=number], input[type=password]{
+  padding: var(--tiny);
+  box-sizing: border-box;
+  border: 2px solid var(--secondary);
+  color: var(--onBackground);
+  background-color: var(--background);
+}
+
+
+input[type=text]:focus, input[type=email]:focus,
+ input[type=number]:focus, input[type=password]:focus {
+  border: 3px solid var(--accent);
+}
+
 @media (max-width: 64rem){
   .assignmentsGrid{
       grid-template-columns: 1fr 1fr;

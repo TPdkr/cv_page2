@@ -10,7 +10,8 @@ function Button({
     children,
     type="primary", 
     onClick=()=>{console.log("I was clicked heehehe");},
-    padding = "var(--small) var(--medium)"
+    padding = "var(--small) var(--medium)",
+    func_type = "button"
     }){
     /*
     PRIMARY BUTTON
