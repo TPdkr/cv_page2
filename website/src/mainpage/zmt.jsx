@@ -8,6 +8,22 @@ function Zmt(){
             <h1 className={`inv ${styles.experience}`} id="exp">
                 EXPERIENCE
             </h1>
+            <div className={styles.content}>
+                <h2>TEACHING ASSISTANT IN ALGORITHMS AND ROBOTICS</h2>
+                <div>
+                        <h3>JUL 2026 - AUG 2026</h3>
+                        <h4>
+                            Constructor University summer camp 2026
+                        </h4>
+                        <p className="inv"> TASKS</p>
+                        <p className="indent"><br></br>
+                                - taught student basics of algorithms and complexity<br></br>
+                                - designed lecture slides and assignments<br></br>
+                                - instructed participants on using the Linux terminal<br></br>
+                                - helped with assembley and programming of the robots<br></br>
+                        </p>
+                    </div>
+            </div>
             <div className={styles.zmt}>
                 <div className={styles.content}>
                     <h2>WORKING STUDENT IN MACHINE LEARNING WITH MARINE DATA</h2>
