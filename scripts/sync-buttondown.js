@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 const API_KEY = process.env.BUTTONDOWN_API_KEY;
-const OUT_DIR = path.join(process.cwd(), "src/website/content/newsletters");
+const OUT_DIR = path.join(process.cwd(), "website/src/content/newsletters");
 
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
