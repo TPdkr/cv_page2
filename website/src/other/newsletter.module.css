@@ -82,3 +82,10 @@ ARCHIVE
 	align-items: center;
 	align-content: center;
 }
+
+.emailContent{
+	display: flex;
+	flex-direction: column;
+	gap: var(--small);
+	padding: var(--medium);
+}

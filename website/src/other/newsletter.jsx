@@ -11,23 +11,24 @@ import {Folder} from "../atomics/folder.jsx";
 const BUTTONDOWN_USERNAME = "TPdkr";
 
 function Newsletter(){
-const [isFolderOpen, setIsFolderOpen] = useState(false);
+	//paths are loaded into the thing
+	const emails = import.meta.glob('../content/newsletters/*.md', {
+		eager: true,   // resolve immediately at build time, not as async imports
+		query: '?raw', // import as raw string content, not as a parsed JS module
+		import: 'default',
+	});
 
-//paths are loaded into the thing
-const emails = import.meta.glob('../content/newsletters/*.md', {
-	eager: true,   // resolve immediately at build time, not as async imports
-	query: '?raw', // import as raw string content, not as a parsed JS module
-	import: 'default',
-});
-
-//here the contents are parsed into text
-const emails_data = Object.entries(emails).map(([path, content]) => {
-	const { attributes, body } = fm(content);
-	return { attributes, body };
-});
-
-
-const isOpen = (isFolderOpen)? styles.open : styles.closed;
+	//here the contents are parsed into text
+	const emails_data = Object.entries(emails).map(([path, content]) => {
+		const { attributes, body } = fm(content);
+		return { attributes, body };
+	});
+	//emails are sorted by date in reverse
+	emails_data.sort((a, b) => {
+		const dateA = new Date(a.attributes.date);
+		const dateB = new Date(b.attributes.date);
+		return dateB - dateA;//Descemding order
+	});
 
 	return(
 		<div className={styles.Newsletter}>
@@ -39,12 +40,11 @@ const isOpen = (isFolderOpen)? styles.open : styles.closed;
 					<form className={styles.form}
 					action={`https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`} 
 					method="POST" 
-					target="_blank" 
-					noValidate>
+					target="_blank">
 						<input type="hidden" name="embed" value="1" />
 						<input type="hidden" name="tag" value="mywebsite" />
 						<input type="email" name="email" placeholder="Enter your email" required />
-						<Button func_type="submit">Subscribe</Button>
+						<Button func_type="submit" onClick={() => setSubState(1)}>Subscribe</Button>
 					</form>
 				</div>
 			</div>
@@ -55,7 +55,10 @@ const isOpen = (isFolderOpen)? styles.open : styles.closed;
 				<div className={styles.folders}>
 					{emails_data.map(({ attributes, body }, index) => (
 						<Folder key={index} folderName={attributes.title} stagger={index}>
-							<div dangerouslySetInnerHTML={{ __html: body }} />
+							<div className={styles.emailContent}>
+								<b>DATE: {Object.keys(attributes).includes('date') ? new Date(attributes.date).toLocaleDateString() : 'N/A'}</b>
+								<div dangerouslySetInnerHTML={{ __html: body }} />
+							</div>
 						</Folder>
 					))}
 				</div>
