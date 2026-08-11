@@ -33,7 +33,7 @@
 }
 
 .trigger:hover {
-	background-color: #111; /* subtle hover, still reads as black */
+	background-color: var(--backgroundHover); /* subtle hover, still reads as black */
 }
 
 .arrow {
@@ -67,7 +67,7 @@
 }
 
 .quickBtn:hover {
-	background-color: #111;
+	background-color: var(--backgroundHover);
 }
 
 .quickBtn:first-child {
@@ -87,12 +87,12 @@
 	align-items: center;
 	gap: var(--tiny);
 	padding: var(--tiny) var(--small);
-	color: gray;
+	color: var(--secondary);
 	cursor: pointer;
 }
 
 .option:hover {
-	background-color: #111;
+	background-color: var(--backgroundHover);
 }
 
 .checkbox {
