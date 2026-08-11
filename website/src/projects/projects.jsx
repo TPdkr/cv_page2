@@ -14,6 +14,9 @@ import ads_preview from "../assets/projects/ads/preview.png";
 import cc_preview from "../assets/projects/cc/preview.png";
 
 import { useTheme } from "../themer.jsx";
+import { useState } from "react";
+import Button from "../atomics/button";
+import MultiSelectDropdown from "../atomics/select.jsx";
 import sunset_d from "../assets/projects/sunset_dark.png";
 import sunset_l from "../assets/projects/sunset_light.png";
 
@@ -114,6 +117,10 @@ const projectsList = [
 function Projects(){
     //const elipse = elipse_d;
     const {isLight} = useTheme();
+    const languages = ["C++","C", "Makefiles","Python","Kotlin", "PHP","SQL","React", "HTML","JS","CSS","vite"]
+    const [selected_lang, setSelectedLang] = useState(() => new Set(languages))
+    const filteredList = projectsList.filter((project)=> new Set(project.tags).intersection(selected_lang).size >0 )
+    console.log(filteredList.length)
 
     const sunset = (isLight)? sunset_l : sunset_d;
 
@@ -140,10 +147,17 @@ function Projects(){
                     course grade specified is the overall course grade.
                 </h4>
             </div>
+            <div className={styles.filterRow}>
+                <MultiSelectDropdown 
+                label="tags" 
+                options={languages} 
+                selected={selected_lang} 
+                setSelected={setSelectedLang}/>
+            </div>
             {/** this is the list of projects */}
             <div className={styles.cardsWrap}>
                 <div className={styles.projectsCards}>
-                    {projectsList.map((project)=><ProjectCard project={project} key={project.name}/>)}
+                    {filteredList.map((project)=><ProjectCard project={project} key={project.name}/>)}
                 </div>
             </div>
         </div>

@@ -1,0 +1,102 @@
+/* multiSelectDropdown.module.css */
+.wrapper {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	gap: var(--tiny);
+	width: fit-content;
+	font-family: "JetBrains Mono", monospace, Helvetica;
+}
+
+.label {
+	color: var(--secondary);
+	font-size: 1.2rem;
+	position: absolute;
+	top: -2rem;
+}
+
+.trigger {
+	font-family: "JetBrains Mono", monospace, Helvetica;
+	font-size: 1.2rem;
+	background-color: var(--background);
+	color: var(--secondary);
+	border: 3px solid var(--secondary);
+	border-radius: 0;
+	padding: var(--tiny);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	cursor: pointer;
+	min-width: 12rem;
+	
+}
+
+.trigger:hover {
+	background-color: #111; /* subtle hover, still reads as black */
+}
+
+.arrow {
+	font-size: 0.7rem;
+}
+
+.dropdown {
+	position: relative;
+	background-color: var(--background);
+	color: var(--secondary);
+	border: 3px solid var(--secondary);
+	border-radius: 0;
+	margin-top: var(--tiny);
+}
+
+.quickActions {
+	display: flex;
+	border-bottom: 3px solid var(--secondary);
+}
+
+.quickBtn {
+	font-family: "JetBrains Mono", monospace, Helvetica;
+	font-size: 1.2rem;
+	flex: 1;
+	background-color: var(--background);
+	color: var(--secondary);
+	border: none;
+	border-radius: 0;
+	padding: 0.4rem;
+	cursor: pointer;
+}
+
+.quickBtn:hover {
+	background-color: #111;
+}
+
+.quickBtn:first-child {
+	border-right: 3px solid var(--secondary);
+}
+
+.optionList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	max-height: 12rem;
+	overflow-y: auto;
+}
+
+.option {
+	display: flex;
+	align-items: center;
+	gap: var(--tiny);
+	padding: var(--tiny) var(--small);
+	color: gray;
+	cursor: pointer;
+}
+
+.option:hover {
+	background-color: #111;
+}
+
+.checkbox {
+	font-family: "JetBrains Mono", monospace, Helvetica;
+	width: 1.6rem; 
+	text-wrap: nowrap;
+}

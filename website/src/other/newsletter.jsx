@@ -35,7 +35,7 @@ function Newsletter(){
 			<div className={styles.headerContainer}>
 				<img src={email_pic} alt="email icon" />
 				<div className={styles.header}>
-					<h2>Subscribe to my newsletter</h2>
+					<h2>Subscribe to my newsletter 📰</h2>
 					<p>Get notified when I post new content on my website and read about interesting bits I find. I promise not to spam you!</p>
 					<form className={styles.form}
 					action={`https://buttondown.com/api/emails/embed-subscribe/${BUTTONDOWN_USERNAME}`} 
