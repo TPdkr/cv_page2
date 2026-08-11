@@ -1,6 +1,6 @@
 ---
 title: "Welcome to [Newsletter name]"
-date: 2027-08-08T20:08:15.904164Z
+date: 2026-08-08T20:08:15.904164Z
 slug: welcome-to-newsletter-name
 buttondown_id: em_2b141xe1p48jya68wg98ctp76s
 ---
