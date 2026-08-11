@@ -7,6 +7,12 @@
 	
 }
 
+@media (max-width: 37rem){
+	.Newsletter{
+		padding: 5rem 0;
+	}
+}
+
 /*
 ===============================================================================
 HEADER
@@ -73,6 +79,9 @@ ARCHIVE
 	width: 100%;
 	min-width:0;
 }
+.archiveTitle{
+	padding: 0 var(--big);;
+}
 
 .folders{
 	margin-top: var(--big);
@@ -88,4 +97,10 @@ ARCHIVE
 	flex-direction: column;
 	gap: var(--small);
 	padding: var(--medium);
+}
+
+.emaiContentBody{
+	display: flex;
+	flex-direction: column;
+	gap: var(--small);
 }

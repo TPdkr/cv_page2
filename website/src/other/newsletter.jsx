@@ -50,14 +50,18 @@ function Newsletter(){
 			</div>
 			<div className={styles.archive}>
 				<div><Separator simb="~" /></div>
-				<h3>Newsletter Archive</h3>
-				<p>Check out my previous newsletters below.</p>
+				<div className={styles.archiveTitle}>
+					<h3>Newsletter Archive</h3>
+					<p>Check out my previous newsletters below.</p>
+				</div>
+				
+				
 				<div className={styles.folders}>
 					{emails_data.map(({ attributes, body }, index) => (
 						<Folder key={index} folderName={attributes.title} stagger={index}>
-							<div className={styles.emailContent}>
+							<div className={`${styles.emailContent} inv`}>
 								<b>DATE: {Object.keys(attributes).includes('date') ? new Date(attributes.date).toLocaleDateString() : 'N/A'}</b>
-								<div dangerouslySetInnerHTML={{ __html: body }} />
+								<div className={styles.emaiContentBody} dangerouslySetInnerHTML={{ __html: body }} />
 							</div>
 						</Folder>
 					))}

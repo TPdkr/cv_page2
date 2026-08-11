@@ -10,11 +10,6 @@ FOLDER
 	transition: all 0.3s ease-in-out;
 	transform-origin: top center;
 	transform: rotateX(0deg) scaleY(1);
-	
-	width: 90%;
-}
-
-.folder.open{
 	width: 90%;
 }
 
@@ -32,10 +27,6 @@ HEADER
 	height: 3.2rem;
 	transition: all 0.3s ease-in-out;
 	z-index: 1;
-}
-
-.folderHeader img{
-	height: 3.2rem;
 }
 
 .folderHeader h4{
@@ -60,8 +51,8 @@ CONTENT
 	display: grid;
 	grid-template-rows: 0fr;
 	transition: grid-template-rows 0.3s ease-in-out;
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;
+	padding-top: var(--big);
+	padding-bottom: var(--medium);
 	background-color: var(--onBackground);
 	color: var(--background);
 	transition: all 0.3s ease-in-out;
@@ -90,4 +81,10 @@ HOVER  AND PRESS EFFECTS
 .folder.open .folderContent{
 	grid-template-rows: 1fr;
 	padding-bottom: 0;
+}
+
+@media (max-width: 37rem){
+	.folder{
+		width: 100%;
+	}
 }

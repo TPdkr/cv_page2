@@ -24,6 +24,7 @@ these vary based on context but generally stay the same as this ensures consiste
   --onPrimary: #000000;
 
   --secondary: #A4A4A4;
+  --invSecondary: #555555;
   --onSecondary: #000000;
 
   --accent: #B45AF8;
@@ -89,6 +90,7 @@ these vary based on context but generally stay the same as this ensures consiste
   --onPrimary: #ffffff;
 
   --secondary: #555555;
+  --invSecondary: #A4A4A4;
   --onSecondary: #ffffff;
 
   --accent: #B45AF8;
@@ -176,6 +178,10 @@ small text styling
   color: var(--background);
   background-color: var(--onBackground);
   width: fit-content;
+}
+
+.inv p, .inv p b, .inv p strong {
+  color: var(--invSecondary);
 }
 
 .indent{
