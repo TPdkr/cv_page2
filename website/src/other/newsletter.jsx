@@ -55,7 +55,7 @@ const isOpen = (isFolderOpen)? styles.open : styles.closed;
 				<div className={styles.folders}>
 					{emails_data.map(({ attributes, body }, index) => (
 						<Folder key={index} folderName={attributes.title} stagger={index}>
-							{body}
+							<div dangerouslySetInnerHTML={{ __html: body }} />
 						</Folder>
 					))}
 				</div>
