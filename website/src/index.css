@@ -18,6 +18,7 @@ these vary based on context but generally stay the same as this ensures consiste
 
   /*COLORS*/
   --background: #000000;
+  --backgroundHover: #202020;
   --onBackground: #FFFFFF;
 
   --primary: #FFFFFF;
@@ -84,6 +85,7 @@ these vary based on context but generally stay the same as this ensures consiste
 .light{
   /*COLORS*/
   --background: #ffffff;
+  --backgroundHover: #bfbfbf;
   --onBackground: #000000;
 
   --primary: #000000;
