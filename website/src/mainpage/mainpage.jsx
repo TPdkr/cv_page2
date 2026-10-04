@@ -1,7 +1,7 @@
 import styles from "./mainpage.module.css";
 import Header from "./header.jsx";
 import Contacts from "./contacts.jsx";
-import Zmt from "./zmt.jsx";
+import Experience from "./exp.jsx";
 import Edu from "./edu.jsx";
 import Volunteering from "./volunteering.jsx";
 import Footer from "../navbar/footer.jsx";
@@ -12,7 +12,7 @@ function MainPage(){
         <div className={styles.mainPage}>
             <Header/>
             <Contacts/>
-            <Zmt/>
+            <Experience/>
             <Edu/>
             <Volunteering/>
         </div>

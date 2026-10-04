@@ -1,8 +1,8 @@
-import styles from "./zmt.module.css";
+import styles from "./exp.module.css";
 import wave from "../assets/main/wave.png";
 import Separator from "../atomics/separator";
 
-function Zmt(){
+function Experience(){
     return (
         <>
             <h1 className={`inv ${styles.experience}`} id="exp">
@@ -66,4 +66,4 @@ function Zmt(){
     );
 }
 
-export default Zmt
+export default Experience
