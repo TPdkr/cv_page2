@@ -1,8 +1,8 @@
 import styles from "./header.module.css";
-import star_d from "../assets/star_dark.svg";
-import star2_d from "../assets/star_sharp_dark.svg";
-import star_l from "../assets/star_light.svg";
-import star2_l from "../assets/star_sharp_light.svg";
+import star_d from "../assets/main/star_dark.svg";
+import star2_d from "../assets/main/star_sharp_dark.svg";
+import star_l from "../assets/main/star_light.svg";
+import star2_l from "../assets/main/star_sharp_light.svg";
 import mePic from "../assets/me.png";
 
 import {useTheme} from "../themer.jsx";

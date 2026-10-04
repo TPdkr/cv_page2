@@ -1,6 +1,7 @@
 import styles from "./edu.module.css";
-import uni from "../assets/uni.png";
-import school from "../assets/school.png";
+import cub from "../assets/main/uni.png";
+import rwth from "../assets/main/RWTH.png";
+import school from "../assets/main/school.png";
 import { Cell, FilledCell, Grid } from "../atomics/grid";
 
 function Edu(){
@@ -9,6 +10,25 @@ function Edu(){
             <h1 className={`inv ${styles.education}`} id="edu">
                 EDUCATION
             </h1>
+            {/** RWTH*/}
+            <div className={styles.uni}>
+                <h2>RWTH AACHEN</h2>
+                <div className={styles.suptitle}>
+                    <h3>
+                        MSc Software Systems Engineering
+                    </h3>
+                    <h3>
+                        Aachen, Germany
+                    </h3>
+                </div>
+                <img src={rwth} className={styles.uniPic}/>
+                {/** text contents */}
+                <h4>---2026-CURRENT</h4>
+                <p className={styles.uniDesc}>
+                    I recently started my <b>Master's degree in Software Systems Engineering at RWTH Aachen University</b>. I am currently in my 
+                    first semester and I am excited to continue developing my skills and knowledge in the field of computer science.
+                </p>
+            </div>
             {/** CONSTRUCTOR*/}
             <div className={styles.uni}>
                 <h2>CONSTRUCTOR UNIVERSITY BREMEN</h2>
@@ -20,7 +40,7 @@ function Edu(){
                         Bremen, Germany
                     </h3>
                 </div>
-                <img src={uni} className={styles.uniPic}/>
+                <img src={cub} className={styles.uniPic}/>
                 {/** text contents */}
                 <h4>---2023-2026</h4>
                 <p className={styles.uniDesc}>
