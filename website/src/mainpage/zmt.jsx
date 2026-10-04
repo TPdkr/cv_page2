@@ -1,5 +1,5 @@
 import styles from "./zmt.module.css";
-import wave from "../assets/wave.png";
+import wave from "../assets/main/wave.png";
 import Separator from "../atomics/separator";
 
 function Zmt(){
