@@ -47,6 +47,7 @@ these vary based on context but generally stay the same as this ensures consiste
   --vite: var(--straightBlue);
   /*light blue*/
   --React: var(--fruityBlue);
+  --Shell: var(--fruityBlue);
   /*orange*/
   --Makefiles: var(--concernedOrange);
   --HTML: var(--concernedOrange);

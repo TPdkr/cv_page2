@@ -20,6 +20,8 @@ import Genau from './projects/genau/genau.jsx';
 import JVM from './projects/jvm/jvm.jsx';
 import ADS from './projects/ads/ads.jsx';
 import CCpp from './projects/cc/cc.jsx';
+import Caughtup from './projects/caughtup/caughtup.jsx';
+import Loggedout from './projects/loggedout/loggedout.jsx';
 import Newsletter from './other/newsletter.jsx';
 
 function App() {
@@ -45,6 +47,8 @@ function App() {
             <Route path="cv_page2/projects/jvm/" element={<JVM/>}></Route>
             <Route path="cv_page2/projects/ads/" element={<ADS/>}></Route>
             <Route path="cv_page2/projects/cc/" element={<CCpp/>}></Route>
+            <Route path="cv_page2/projects/caughtup/" element={<Caughtup/>}></Route>
+            <Route path="cv_page2/projects/loggedout/" element={<Loggedout/>}></Route>
             {/** other pages */}
             <Route path="cv_page2/newsletter/" element={<Newsletter/>}></Route>
             <Route path="cv_page2/notyet/" element={<Building/>}></Route>

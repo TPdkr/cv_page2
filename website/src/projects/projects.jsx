@@ -12,6 +12,8 @@ import dbs_preview from "../assets/projects/dbs/preview.png";
 import jvm_preview from "../assets/projects/jvm/preview.png";
 import ads_preview from "../assets/projects/ads/preview.png";
 import cc_preview from "../assets/projects/cc/preview.png";
+import caughtup_preview from "../assets/projects/caughtup/preview.png";
+import loggedout_preview from "../assets/projects/loggedout/preview.png";
 
 import { useTheme } from "../themer.jsx";
 import { useState } from "react";
@@ -21,6 +23,26 @@ import sunset_d from "../assets/projects/sunset_dark.png";
 import sunset_l from "../assets/projects/sunset_light.png";
 
 const projectsList = [
+    {
+        name:"caughtup",
+        pic: caughtup_preview,
+        title: "Caughtup CLI Series Tracker",
+        year: "2026",
+        color: "Python",
+        desc: "CLI series tracker that prioritizes privacy and simplicity.",
+        tags: ["Python","Shell"],
+        type: "personal"
+    },
+    {
+        name:"loggedout",
+        pic: loggedout_preview,
+        title: "Loggedout LinkedIn Analyzer",
+        year: "2026",
+        color: "Python",
+        desc: "A tool to find key words in LinkedIn postings for a query",
+        tags: ["Python","Jupyter_notebooks"],
+        type: "personal"
+    },
     {
         name:"about",
         pic: about_preview,
