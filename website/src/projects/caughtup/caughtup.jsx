@@ -3,6 +3,10 @@ import Gallery from "../../atomics/gallery";
 
 import { ProjectDescription, SimpleHeader } from "../../atomics/projects";
 
+import pic1 from "../../assets/projects/caughtup/pic1.png"
+import pic2 from "../../assets/projects/caughtup/pic2.png"
+import pic3 from "../../assets/projects/caughtup/pic3.png"
+
 function Caughtup(){
 	//this is description info
 	const date="2026";
@@ -22,11 +26,8 @@ function Caughtup(){
 						<br></br><br></br>
 					</p>
 					<a href="https://github.com/TPdkr/caughtup">GitHub repository</a>
-				</ProjectDescription>{/**TODO set the link and header to actual pics */}
-				<div>
-					<h2>Project gallery:</h2>
-					{/**<Gallery pictures={{}}/>{/** TODO add actual images */}
-				</div>
+					<a href="https://github.com/TPdkr/caughtup/blob/main/docs/plan.md" style={{marginLeft: "var(--small)"}}>Documentation</a>
+				</ProjectDescription>
 				<div className="textBox">
                     <h3>GOAL</h3>
                     <p>
@@ -47,6 +48,12 @@ function Caughtup(){
 						section compared to a lot fo my past entries.
                     </p>
                 </div>
+				<div style={{display: "flex", flexDirection: "column", gap: "var(--big"}}>
+					<h3>PROJECT GALLERY:</h3>
+					<img src={pic1} alt="pic1" style={{ width: "100%", height: 'auto' }}></img>
+					<img src={pic2} alt="pic2" style={{ width: "100%", height: 'auto' }}></img>
+					<img src={pic3} alt="pic3" style={{ width: "100%", height: 'auto' }}></img>
+				</div>
 			</div>
 		</>
 	)

@@ -1,6 +1,8 @@
 import header from "../../assets/projects/loggedout/header.png"
 import Gallery from "../../atomics/gallery";
 
+import top from "../../assets/projects/loggedout/top.png"
+
 import { ProjectDescription, SimpleHeader } from "../../atomics/projects";
 
 function Loggedout(){
@@ -21,11 +23,7 @@ function Loggedout(){
 						<br></br><br></br>
 					</p>
 					<a href="https://github.com/TPdkr/loggedout">GitHub repository</a>
-				</ProjectDescription>{/**TODO set the link and header to actual pics */}
-				<div>
-					<h2>Project gallery:</h2>
-					{/**<Gallery pictures={{}}/>{/** TODO add actual images */}
-				</div>
+				</ProjectDescription>				
 				<div className="textBox">
                     <h3>GOAL</h3>
                     <p>
@@ -45,6 +43,11 @@ function Loggedout(){
 						this project to be honest.
                     </p>
                 </div>
+				
+				<div style={{display: "flex", flexDirection: "column", alignItems: "center", gap: "var(--big"}}>
+					<h3 style={{ marginBottom: "var(--small)" }}>EXAMPLE OUTPUT:</h3>
+					<img src={top} alt="Example output showing a rating of words" style={{ maxWidth: "min(48rem,100%)", height: 'auto' }}></img>
+				</div>
 			</div>
 		</>
 	)
