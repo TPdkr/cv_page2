@@ -62,7 +62,7 @@ function Contacts(){
                     <Cell className={styles.o2}><h4>German</h4></Cell>
                     <Cell className={styles.o3}><h4>Native: Russian</h4></Cell>
                     <Cell className={styles.o4}><h4>C2 Profficient</h4></Cell>
-                    <Cell className={styles.o5}><h4>B1 Intermediate</h4></Cell>
+                    <Cell className={styles.o5}><h4>B2 Intermediate</h4></Cell>
                 </div>
             <Separator simb="-"/>
             <PopUp close={close} isOpen={isOpen}>
